@@ -4,9 +4,6 @@ $sundlof-font: Sundlof;
 $sundlof-foreground: #E1E1E1;
 $sundlof-background: #006679;
 
-$primary-color: #333;
-
-
 @mixin center-align-text() {
 		margin-top: 0;
 		margin-left: auto;
@@ -40,7 +37,6 @@ body {
 .sundlof-font-background{
 	font-family: $sundlof-font;
 	color: #006679;
-	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
 
 .sundlof-font-foreground{
@@ -48,13 +44,9 @@ body {
 	color: $sundlof-foreground;
 }
 
-.sundlof-tag::after{
-	font-family: $sundlof-font;
-	content: "Sundlof";
-}
-
 .sundlof-logo {
 	font-family: $sundlof-font;
+	background-color: $sundlof-background;
 	
 	position:relative;
 	width:180px; 
@@ -64,16 +56,34 @@ body {
 	.icon {
 		width: 100px;
 		height: 100px;
-		font-size: 50pt;
+		font-size: 52pt;
+		
+		color: $sundlof-background;
+		background-color: $sundlof-foreground;
 		
 		@include center-align-text;
 	}
 	
-	.caption{
+	.caption {
 		width:100%;
 		padding-top:7px;
 		font-size:23pt;
+		color: $sundlof-foreground;
 		
 		@include center-align-text;
+	}
+}
+
+.sundlof-logo-inverse {
+	@extend .sundlof-logo;
+	
+	background-color: $sundlof-foreground;
+	
+	.icon {
+		background-color: $sundlof-background;
+		color: $sundlof-foreground;
+	}
+	.caption{
+		color: $sundlof-background;
 	}
 }
