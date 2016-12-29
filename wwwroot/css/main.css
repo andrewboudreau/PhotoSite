@@ -1,0 +1,70 @@
+@font-face {
+	font-family: Sundlof;
+	src: url('../fonts/sundtyp3.woff2') format('woff2'),
+		url('../fonts/sundtype3.woff') format('woff'),
+		url('../fonts/sundtype3.ttf')  format('truetype');
+}
+
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+ 
+.sundlof-background{
+	background-color: #006679;
+}
+
+.sundlof-foreground{
+	background-color: #E1E1E1;
+}
+.sundlof-font{
+	font-family: Sundlof;
+}
+.sundlof-font-background{
+	font-family: Sundlof;
+	color: #006679;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+.sundlof-font-foreground{
+	font-family: Sundlof;
+	color: #E1E1E1;
+}
+
+.sundlof-tag::after{
+	font-family: Sundlof;
+	content: "Sundlof";
+}
+
+.sundlof-logo {
+	position:relative;
+	width:180px; 
+	height:180px;
+	padding-top: 25px;
+}
+.sundlof-logo-caption{
+	padding-top:7px;
+	width:100%;
+	text-align: center;
+	margin-top: 0;
+	margin-left: auto;
+	margin-bottom: 0;
+	margin-right: auto;
+	font-size:23pt;
+}
+ .sundlof-logo-icon{
+	 width: 100px;
+	height: 100px;
+	
+	margin-top: 0;
+	margin-left: auto;
+	margin-bottom: 0;
+	margin-right: auto;
+	
+	font-size: 50pt;
+	text-align: center;
+	margin-top: 0;
+	margin-left: auto;
+	margin-bottom: 0;
+	margin-right: auto;
+ }

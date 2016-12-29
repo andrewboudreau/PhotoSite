@@ -1,0 +1,79 @@
+$font-stack: Helvetica, sans-serif;
+
+$sundlof-font: Sundlof;
+$sundlof-foreground: #E1E1E1;
+$sundlof-background: #006679;
+
+$primary-color: #333;
+
+
+@mixin center-align-text() {
+		margin-top: 0;
+		margin-left: auto;
+		margin-bottom: 0;
+		margin-right: auto;
+		text-align: center;
+}
+
+@font-face {
+	font-family: Sundlof;
+	src: url('../fonts/sundtyp3.woff2') format('woff2'),
+		url('../fonts/sundtype3.woff') format('woff'),
+		url('../fonts/sundtype3.ttf')  format('truetype');
+}
+
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+ 
+.sundlof-background{
+	background-color: $sundlof-background;
+}
+
+.sundlof-foreground{
+	background-color: $sundlof-foreground;
+}
+.sundlof-font{
+	font-family: $sundlof-font;
+}
+.sundlof-font-background{
+	font-family: $sundlof-font;
+	color: #006679;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+.sundlof-font-foreground{
+	font-family: $sundlof-font;
+	color: $sundlof-foreground;
+}
+
+.sundlof-tag::after{
+	font-family: $sundlof-font;
+	content: "Sundlof";
+}
+
+.sundlof-logo {
+	font-family: $sundlof-font;
+	
+	position:relative;
+	width:180px; 
+	height:180px;
+	padding-top: 25px;
+	
+	.icon {
+		width: 100px;
+		height: 100px;
+		font-size: 50pt;
+		
+		@include center-align-text;
+	}
+	
+	.caption{
+		width:100%;
+		padding-top:7px;
+		font-size:23pt;
+		
+		@include center-align-text;
+	}
+}
