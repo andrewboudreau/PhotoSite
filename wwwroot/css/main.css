@@ -2,12 +2,15 @@
   font-family: Sundlof;
   src: url("../fonts/sundtyp3.woff2") format("woff2"), url("../fonts/sundtype3.woff") format("woff"), url("../fonts/sundtype3.ttf") format("truetype"); }
 
+html {
+  background: #000; }
+
 body {
-  padding-top: 50px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  background: #000; }
 
 .sundlof-background {
-  background-color: #006679; }
+  background-color: #00687B; }
 
 .sundlof-foreground {
   background-color: #E1E1E1; }
@@ -17,7 +20,7 @@ body {
 
 .sundlof-font-background {
   font-family: Sundlof;
-  color: #006679; }
+  color: #00687B; }
 
 .sundlof-font-foreground {
   font-family: Sundlof;
@@ -25,16 +28,16 @@ body {
 
 .sundlof-logo, .sundlof-logo-inverse {
   font-family: Sundlof;
-  background-color: #006679;
+  background-color: #00687B;
   position: relative;
-  width: 180px;
+  width: 100%;
   height: 180px;
   padding-top: 25px; }
   .sundlof-logo .icon, .sundlof-logo-inverse .icon {
     width: 100px;
     height: 100px;
     font-size: 52pt;
-    color: #006679;
+    color: #00687B;
     background-color: #E1E1E1;
     margin-top: 0;
     margin-left: auto;
@@ -55,7 +58,63 @@ body {
 .sundlof-logo-inverse {
   background-color: #E1E1E1; }
   .sundlof-logo-inverse .icon {
-    background-color: #006679;
+    background-color: #00687B;
     color: #E1E1E1; }
   .sundlof-logo-inverse .caption {
-    color: #006679; }
+    color: #00687B; }
+
+/* General styles for all menus */
+.menu {
+  background: #00687B;
+  position: fixed; }
+  .menu h3 {
+    color: #E1E1E1;
+    font-size: 1.9em;
+    padding: 20px;
+    margin: 0;
+    font-weight: 300; }
+  .menu a {
+    display: block;
+    color: #E1E1E1;
+    font-size: 1.1em;
+    font-weight: 300; }
+  .menu a:hover {
+    background: #00687B; }
+  .menu a:active {
+    background: #E1E1E1;
+    color: #00687B; }
+
+/* Orientation-dependent styles for the content of the menu */
+.menu-vertical {
+  width: 240px;
+  height: 100%;
+  top: 0;
+  z-index: 1000; }
+  .menu-vertical a {
+    padding: 1em; }
+
+/* Vertical menu that slides from the left or right */
+.menu-left {
+  left: -205px; }
+
+.menu-left.menu-open {
+  left: 0px; }
+
+/* Push classes applied to the body */
+.menu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0; }
+
+.menu-push-toright {
+  left: 205px; }
+
+.menu-push-toleft {
+  left: -240px; }
+
+/* Transitions */
+.menu,
+.menu-push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }

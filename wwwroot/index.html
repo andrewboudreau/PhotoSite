@@ -8,36 +8,89 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="css/hamburger.min.css">
+	<link rel="stylesheet" href="css/hamburger.css">
 	<link rel="stylesheet" href="css/main.css">
+	
+	<script src="js/modernizr-custom.js"></script>
+
 	<!--[if lt IE 9]>
 		<script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
-		<![endif]-->
+	<![endif]-->
 </head>
 
-<body>
+<body class="menu-push">
+	
 
-<div class="sundlof-logo">
-	<div class="icon">S</div>
-	<div class="caption">Sundlof</div>
-</div>
-<br />
-
+	<nav class="menu menu-vertical menu-left" id="menu-s1">
+		<div style="position:relative; z-index: 10;">
+			<div style="position:absolute; right:3px;">
+				<div id="hamburger" class="hamburger hamburger--squeeze" style="padding-right:2px;" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+				</div>
+			</div>
+		</div>
+	
+		<div class="sundlof-logo">
+			<div class="icon">S</div>
+			<div class="caption">Sundlof</div>
+		</div>
+		<ul>
+		<li>
+			<a href="/humanity-smaller-images-2">Humanity</a>
+			<ul class="sub-menu">
+			<li>
+				<a href="/street-documentary">Street &#038; Documentary</a>
+			</li>
+			<li>
+				<a href="/studio-portraits-people-ideas">Studio Portraits &#038; Ideas</a>
+			</li>
+			<li>
+				<a href="/international-3">International</a>
+				<ul class="sub-menu">
+					<li><a href="/india/">India</a></li>
+				</ul>
+			</li>
+			</ul>
+		</li>
+		<li><a href="/business-industry/">Business &#038; Industry</a></li>
+		<li><a href="/health-society/">Health &#038; Society</a></li>
+		<li>
+			<a href="/projects/">Projects</a>
+			<ul class="sub-menu">
+			<li><a href="/projects/flashes-of-hope-portraits-of-children-and-families-battling-cancer/">Flashes of Hope</a></li>
+			<li><a href="/projects/on-the-line-out-to-dry/">On the Line &#8211; Out to Dry</a></li>
+			<li><a target="_blank" href="http://www.sundlof.com/bookACP.pdf">BackPorch &#8211; 1991- present</a></li>
+			<li><a target="_blank" href="http://sundlof.com/happyny.pdf">Happy New Years</a></li>
+			</ul>
+		</li>
+		<li><a href="/contact/">Contact</a></li>
+	</ul>
+	</nav>
+	
+				
+<!--	
  <div class="sundlof-logo-inverse"> 
 	<div class="icon">S</div> 
 	 <div class="caption">Sundlof</div> 
- </div> 
+ </div> -->
+
+<br />
 
 	<div class="container">
+
 		<!-- Example row of columns -->
 		<div class="row">
 			<div class="col-md-4">
-				<h2>Heading</h2>
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-					nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-				<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+				<section>
+					<h2>Slide Menus</h2>
+					<!-- Class "menu-open" gets applied to menu -->
+					<button class="btn btn-default" id="showLeft">Show/Hide Left Slide Menu</button>
+				</section>
 			</div>
 			<div class="col-md-4">
 				<h2>Heading</h2>
@@ -62,9 +115,32 @@
 	<script>
 			window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
 		</script>
+		
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+
+
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' );
+	var showLeft = document.getElementById( 'hamburger');
+	var showLeft2 = document.getElementById( 'showLeft');
+
+	var toggleMenu = function() {
+		var self = this;
+		$(menuLeft).toggleClass("menu-open");
+
+		window.setTimeout(function() {
+			$(self).toggleClass('active is-active');
+		}, 150);
+		
+		//classie.toggle( document.body, 'menu-push-toright' );
+	};
+
+	showLeft.onclick = toggleMenu;
+	showLeft2.onclick = toggleMenu;
+</script>
+
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <!-- <script> -->
 <!-- (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]= -->
