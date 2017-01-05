@@ -38,7 +38,7 @@ ul {
   position: relative;
   width: 100%;
   height: 180px;
-  padding-top: 25px; }
+  padding-top: 29px; }
   .sundlof-logo .icon, .sundlof-logo-inverse .icon {
     width: 100px;
     height: 100px;
@@ -159,11 +159,11 @@ nav.menu ul li a {
   opacity: 0.8 !important;
   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80) !important; }
 
-header nav ul.sub-menu {
+nav.menu ul.sub-menu {
   padding-bottom: 5px;
   display: none; }
 
-header nav ul.sub-menu li a {
+nav.menu ul.sub-menu li a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 18px;
@@ -171,7 +171,7 @@ header nav ul.sub-menu li a {
   opacity: 0.6 !important;
   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60) !important; }
 
-header nav ul.sub-menu li a:before {
+nav.menu ul.sub-menu li a:before {
   content: '-\00A0';
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -190,37 +190,37 @@ nav.menu ul li.opened a:after {
   line-height: 28px;
   font-family: Arial, Helvetica, sans-serif; }
 
-header nav ul.sub-menu li a:after {
+nav.menu ul.sub-menu li a:after {
   content: '';
   display: none; }
 
-header nav ul.sub-menu li.has-menu a:before {
+nav.menu ul.sub-menu li.has-menu a:before {
   content: "+ " !important; }
 
-header nav ul.sub-menu li.has-menu.opened a:before {
+nav.menu ul.sub-menu li.has-menu.opened a:before {
   content: "- " !important; }
 
-header nav ul.sub-menu li.has-menu ul li a:before {
+nav.menu ul.sub-menu li.has-menu ul li a:before {
   content: "- " !important; }
 
-header nav ul.sub-menu li.has-menu ul li a:before {
+nav.menu ul.sub-menu li.has-menu ul li a:before {
   content: "-" !important; }
 
-header nav ul.sub-menu li ul.sub-menu {
+nav.menu ul.sub-menu li ul.sub-menu {
   padding: 5px 0 0 10px;
   display: none;
   position: relative;
   z-index: 99;
   margin-bottom: 7px; }
 
-header nav ul.sub-menu li ul.sub-menu li a:before {
+nav.menu ul.sub-menu li ul.sub-menu li a:before {
   content: '';
   margin: 0px; }
 
-header nav ul.sub-menu li ul.sub-menu li {
+nav.menu ul.sub-menu li ul.sub-menu li {
   line-height: 18px !important; }
 
-header nav ul.sub-menu li ul.sub-menu li a {
+nav.menu ul.sub-menu li ul.sub-menu li a {
   line-height: 18px !important;
   height: 18px !important;
   opacity: 0.6 !important;
