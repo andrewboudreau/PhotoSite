@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    John Sundlof -- js@sundlof.com
 
 # THANKS
 
-    <name>
+    Andrew Boudreau
 
 # TECHNOLOGY COLOPHON
 
