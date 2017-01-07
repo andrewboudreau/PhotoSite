@@ -27,6 +27,7 @@ html {
 body {
 	padding-bottom: 20px;
 	background:#000;
+	top: 0;
 }
 
 ul {
@@ -100,18 +101,29 @@ ul {
 }
 
 .gallery {
+	margin-top:150px;
+
 	section {
-		padding-top:150px;
+		width:100%;
 	}
 
 	figure {
+		width:100%;
 		min-height: 211px;
+
+		a {
+			width:100%;	
+			img {
+				width:100%;
+			}
+		}
 	}
 	
 	section:last-child {
 		float:right;
 	}
 }
+
 
 /* General styles for all menus */
 .navigation-container {
@@ -123,7 +135,54 @@ ul {
     top: 208px;
     left: 30px;
 }
-	
+
+.menu-mobile {
+	background: $sundlof-background;
+	color: $sundlof-foreground;
+	height: 52px;
+	width:100%;
+	position:relative;
+	z-index: 100;
+
+	.navigation-container {
+		width:100%;
+		top:0px;
+		margin-left: 35px;
+		display: none;
+		text-align: left;
+		padding: 0 0;
+		padding-top: 36px;
+		position: relative;
+		
+		ul {
+			width:100%;
+
+			li {
+				width:100%;
+
+				a {
+					font-size: 23px;
+				}
+			}
+		}
+	}
+
+	.navigation-container > ul > li{
+		margin-top:7px;
+	}
+}
+
+.menu-mobile.menu-open {
+	height:420px;
+	.navigation-container {
+		display:block;
+	}	
+}
+
+.menu-push-tobottom {
+	top: 420px;
+}
+
 .menu {    
 	font-family: 'Oswald';
     font-weight: bold;
@@ -199,11 +258,26 @@ ul {
     -webkit-transition: left 700ms ease;
     -moz-transition: left 700ms ease;
     
+	transition: all 700ms ease;
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+
 	// -webkit-transition: all 0.3s ease;
 	// -moz-transition: all 0.3s ease;
 	// transition: all 0.3s ease;
 }
 
+@media (max-width: 991px) and (min-width: 768px) {
+	.gallery {
+		margin-top: 72px;
+	}
+}
+
+@media (max-width: 767px){
+	.gallery {
+		margin-top: 72px;
+	}
+}
 
 /*header
 ---------*/

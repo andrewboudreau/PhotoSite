@@ -8,7 +8,8 @@ html {
 
 body {
   padding-bottom: 20px;
-  background: #000; }
+  background: #000;
+  top: 0; }
 
 ul {
   list-style: none;
@@ -69,14 +70,19 @@ ul {
   .sundlof-logo-inverse .caption {
     color: #00687B; }
 
-.gallery section {
-  padding-top: 150px; }
-
-.gallery figure {
-  min-height: 211px; }
-
-.gallery section:last-child {
-  float: right; }
+.gallery {
+  margin-top: 150px; }
+  .gallery section {
+    width: 100%; }
+  .gallery figure {
+    width: 100%;
+    min-height: 211px; }
+    .gallery figure a {
+      width: 100%; }
+      .gallery figure a img {
+        width: 100%; }
+  .gallery section:last-child {
+    float: right; }
 
 /* General styles for all menus */
 .navigation-container {
@@ -87,6 +93,39 @@ ul {
   position: absolute;
   top: 208px;
   left: 30px; }
+
+.menu-mobile {
+  background: #00687B;
+  color: #E1E1E1;
+  height: 52px;
+  width: 100%;
+  position: relative;
+  z-index: 100; }
+  .menu-mobile .navigation-container {
+    width: 100%;
+    top: 0px;
+    margin-left: 35px;
+    display: none;
+    text-align: left;
+    padding: 0 0;
+    padding-top: 36px;
+    position: relative; }
+    .menu-mobile .navigation-container ul {
+      width: 100%; }
+      .menu-mobile .navigation-container ul li {
+        width: 100%; }
+        .menu-mobile .navigation-container ul li a {
+          font-size: 23px; }
+  .menu-mobile .navigation-container > ul > li {
+    margin-top: 7px; }
+
+.menu-mobile.menu-open {
+  height: 420px; }
+  .menu-mobile.menu-open .navigation-container {
+    display: block; }
+
+.menu-push-tobottom {
+  top: 420px; }
 
 .menu {
   font-family: 'Oswald';
@@ -144,7 +183,18 @@ ul {
 .menu-push {
   transition: left 700ms ease;
   -webkit-transition: left 700ms ease;
-  -moz-transition: left 700ms ease; }
+  -moz-transition: left 700ms ease;
+  transition: all 700ms ease;
+  -webkit-transition: all 700ms ease;
+  -moz-transition: all 700ms ease; }
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .gallery {
+    margin-top: 72px; } }
+
+@media (max-width: 767px) {
+  .gallery {
+    margin-top: 72px; } }
 
 /*header
 ---------*/

@@ -13,8 +13,71 @@
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/hamburger.css">
 	<link rel="stylesheet" href="css/main.css">
-	
-	<script src="js/vendor/jquery-3.1.1.min.js"></script>	
+<style>
+ul.rig {
+	list-style: none;
+	font-size: 0px;
+	margin-left: -2.5%; /* should match li left margin */
+}
+ul.rig li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 2.5% 2.5%;
+	background: transparent;
+	border: 1px solid transparent;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	box-shadow: 0 0 5px transparent;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+ul.rig li img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px;
+}
+ul.rig li h3 {
+	margin: 0 0 5px;
+}
+ul.rig li p {
+	font-size: .9em;
+	line-height: 1.5em;
+	color: #999;
+}
+/* class for 2 columns */
+ul.rig.columns-2 li {
+	width: 47.5%; /* this value + 2.5 should = 50% */
+}
+/* class for 3 columns */
+ul.rig.columns-3 li {
+	width: 30.83%; /* this value + 2.5 should = 33% */
+}
+/* class for 4 columns */
+ul.rig.columns-4 li {
+	width: 22.5%; /* this value + 2.5 should = 25% */
+}
+ 
+@media (max-width: 480px) {
+	ul.grid-nav li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	ul.grid-nav li a {
+		display: block;
+	}
+	ul.rig {
+		margin-left: 0;
+	}
+	ul.rig li {
+		width: 100% !important; /* over-ride all li styles */
+		margin: 0 0 20px;
+	}
+}
+
+</style>
+<script src="js/vendor/jquery-3.1.1.min.js"></script>	
 	<!-- Core CSS file -->
 	<link rel="stylesheet" href="photoswipe/photoswipe.css"> 
 
@@ -24,13 +87,12 @@
      - preloader.gif (for browsers that do not support CSS animations) -->
 	<link rel="stylesheet" href="photoswipe/default-skin/default-skin.css"> 
 	<style>
-		.hamburger {
+		.hamburger{
 			display:none;
 		}
 		
-		.hamburger.is-active, 
-		.menu-mobile .hamburger{
-			display:inline-block!important;
+		.hamburger.is-active{
+			display:inline-block;
 		}
 	</style>
 
@@ -43,51 +105,6 @@
 </head>
 
 <body class="menu-push">
-
-	<nav class="menu menu-mobile visible-xs visible-sm">
-		<div style="position:relative; z-index: 10;">
-			<div style="position:absolute; left:5px;" onclick="$('body').toggleClass('menu-push-tobottom'); $('.menu-mobile li.has-menu').addClass('opened').find('ul.sub-menu').show();">
-				<div id="hamburger" class="hamburger hamburger--squeeze" style="padding-right:2px;" type="button" onclick="toggleMenu">
-				<span class="hamburger-box">
-					<span class="hamburger-inner"></span>
-				</span>
-				</div>
-			</div>
-		</div>
-		<div class="navigation-container">
-			<ul>
-				<li class="has-menu">
-					<a href="/humanity-smaller-images-2">Humanity</a>
-					<ul class="sub-menu">
-					<li>
-						<a href="/street-documentary">Street &#038; Documentary</a>
-					</li>
-					<li>
-						<a href="/studio-portraits-people-ideas">Studio Portraits &#038; Ideas</a>
-					</li>
-					<li class="has-menu">
-						<a href="/international-3">International</a>
-						<ul class="sub-menu">
-							<li><a href="/india/">India</a></li>
-						</ul>
-					</li>
-					</ul>
-				</li>
-				<li><a href="/business-industry/">Business &#038; Industry</a></li>
-				<li><a href="/health-society/">Health &#038; Society</a></li>
-				<li class="has-menu">
-					<a href="/projects/">Projects</a>
-					<ul class="sub-menu">
-						<li><a href="/projects/flashes-of-hope-portraits-of-children-and-families-battling-cancer/">Flashes of Hope</a></li>
-						<li><a href="/projects/on-the-line-out-to-dry/">On the Line &#8211; Out to Dry</a></li>
-						<li><a target="_blank" href="http://www.sundlof.com/bookACP.pdf">BackPorch &#8211; 1991- present</a></li>
-						<li><a target="_blank" href="http://sundlof.com/happyny.pdf">Happy New Years</a></li>
-					</ul>
-				</li>
-			<li><a href="/contact/">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
 
 	<nav class="menu menu-vertical menu-left hidden-xs hidden-sm" id="menu-s1">
 		<div style="position:relative; z-index: 10;">
@@ -207,10 +224,43 @@
 			</div>
 		</div>
 	</div>
+	<div class="container">
+		<div class="col-lg-12">
+			<ul class="rig columns-4" style="padding-top:150px;">
+				<li>
+					<img src="pictures/040806-lou-14286x191.jpg" />
+				</li>
+				<li>
+					<img src="pictures/061021-florence-26-1286x191.jpg" />
+				</li>
+				<li>
+					<img src="pictures/100208-imn-diaper-20287x191.jpg" />
+				</li>
+				<li>
+					<img src="pictures/081219-metra-33-3293x191.jpg" />
+				</li>
+				<li>
+					<img src="pictures/081102-trlr-pk-19287x191.jpg" />
+				</li>
+				<li>
+					<img src="pictures/131202_judge_castillo108287x191.jpg" />
+				</li>
+				<li>
+					<img src="pictures/061024-siena-42-1286x191.jpg" />
+				</li>
+				<li>
+					<img src="pictures/061025-volterra-100-1-1286x191.jpg" />
+				</li>
+				
+			</ul>
+		</div>
+	</div>
 
 	<div class="container" >
+	
+		<!-- Example row of columns -->
 		<div class="row gallery" itemscope itemtype="http://schema.org/ImageGallery">
-			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="col-xs-12 col-sm-6 col-md-4">
 				<section>
 					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 						<a href="pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
@@ -235,7 +285,7 @@
 				</section>
 			</div>
 
-			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="col-xs-12 col-sm-6 col-md-4">
 				<section>
 					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 						<a href="pictures/081219-metra-33-3.jpg" itemprop="contentUrl" data-size="977x638">
@@ -260,9 +310,9 @@
 				</section>
 			</div>
 
-			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="col-xs-12 col-sm-6 col-md-4">
 				<section>
-					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 						<a href="pictures/131202_judge_castillo108.jpg" itemprop="contentUrl" data-size="957x638">
 							<img src="pictures/131202_judge_castillo108287x191.jpg" itemprop="thumbnail" alt="Image description" />
 						</a>
@@ -282,40 +332,16 @@
 						</a>
 						<figcaption itemprop="caption description">image caption</figcaption>
 					</figure>
-				</section>
-			</div>
-
-			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-				<section>
-					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
-							<img src="pictures/040806-lou-14286x191.jpg" itemprop="thumbnail" alt="Image description" />
-						</a>
-						<figcaption itemprop="caption description">image caption</figcaption>
-					</figure>
-
-					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="pictures/061021-florence-26-1.jpg" itemprop="contentUrl" data-size="953x638">
-							<img src="pictures/061021-florence-26-1286x191.jpg" itemprop="thumbnail" alt="Image description" />
-						</a>
-						<figcaption itemprop="caption description">image caption</figcaption>
-					</figure>
-
-					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="pictures/100208-imn-diaper-20.jpg" itemprop="contentUrl" data-size="953x638">
-							<img src="pictures/100208-imn-diaper-20287x191.jpg" itemprop="thumbnail" alt="Image description" />
-						</a>
-						<figcaption itemprop="caption description">image caption</figcaption>
-					</figure>
-				</section>
+					</section>
 			</div>
 		</div>
+		<hr>
+		<footer>
+			<p>&copy; <span class="sundlof-font">sundlof</span> <span class="copyright-year sundlof-font">2017<span></p>
+		</footer>
 	</div>
 	<!-- /container -->
 	
-	<footer style="text-align:center;width:100%;position:absolute; bottom:0;">
-		<p>&copy; <span class="sundlof-font">sundlof</span> <span class="copyright-year sundlof-font">2017<span></p>
-	</footer>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
@@ -323,37 +349,34 @@
 <script src="photoswipe/photoswipe.min.js"></script> 
 <script src="photoswipe/photoswipe-ui-default.min.js"></script> 
 <script src="js/photoswipe.init.js"></script> 
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
 
 <script>
 	
-	
-
 	initPhotoSwipe(".gallery");
 
-	//var menuLeft = document.getElementById( 'menu-s1' );
-	var showLeft = $('.hamburger');
+	var menuLeft = document.getElementById( 'menu-s1' );
+	var showLeft = document.getElementById( 'hamburger');
 	//var showLeft2 = document.getElementById( 'showLeft');
 
-	$("nav.menu.menu-left:not(nav.menu.menu-open)").one("mouseover", function(){toggleMenu();});
+	$("nav.menu:not(nav.menu.menu-open)").one("mouseover", function(){toggleMenu();});
 	
 	//$(document).on("click", ":not(#menu-s1)", console.log("doc click"));
 	
 	var toggleMenu = function() {
 		var self = this;
-		$(".menu").toggleClass("menu-open");
+		$(menuLeft).toggleClass("menu-open");
 
 		window.setTimeout(function() {
-			showLeft.toggleClass('is-active');
-			if(!showLeft.hasClass('is-active')){
-				$("nav.menu.menu-left:not(nav.menu.menu-open)").one("mouseover", function(){toggleMenu();});
+			$(showLeft).toggleClass('is-active');
+			if(!$(showLeft).hasClass('is-active')){
+				$("nav.menu:not(nav.menu.menu-open)").one("mouseover", function(){toggleMenu();});
 			}
 		}, 400);
 		
 		//classie.toggle( document.body, 'menu-push-toright' );
 	};
 
-	showLeft.click(toggleMenu);
+	showLeft.onclick = toggleMenu;
 	//showLeft2.onclick = toggleMenu;
 	
 	$("nav.menu ul li.has-menu:not(li.has-menu.opened)").mouseover(
@@ -363,7 +386,7 @@
 			$(this).addClass("opened");
 			$(this).find("> ul.sub-menu").slideDown("fast");
 		});
-
+	
 </script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

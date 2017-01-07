@@ -49,8 +49,6 @@ var parseHtmlGalleryElements = function(gallery) {
     return items;
 }
 
-
-
 var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
     var pswpElement = document.querySelectorAll('.pswp')[0],
         gallery,
