@@ -13,6 +13,26 @@
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/hamburger.css">
 	<link rel="stylesheet" href="css/main.css">
+	
+<script src="js/vendor/jquery-3.1.1.min.js"></script>	
+	<!-- Core CSS file -->
+	<link rel="stylesheet" href="photoswipe/photoswipe.css"> 
+
+	<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+	<link rel="stylesheet" href="photoswipe/default-skin/default-skin.css"> 
+	<style>
+		.hamburger{
+			display:none;
+		}
+		
+		.hamburger.is-active{
+			display:inline-block;
+		}
+	</style>
+
 	<script src="js/modernizr-custom.js"></script>
 
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>	
@@ -22,11 +42,10 @@
 </head>
 
 <body class="menu-push">
-	
 
-	<nav class="menu menu-vertical menu-left menu-open" id="menu-s1">
+	<nav class="menu menu-vertical menu-left hidden-xs hidden-sm" id="menu-s1">
 		<div style="position:relative; z-index: 10;">
-			<div style="position:absolute; right:3px;">
+			<div style="position:absolute; right:5px;">
 				<div id="hamburger" class="hamburger hamburger--squeeze" style="padding-right:2px;" type="button">
 				<span class="hamburger-box">
 					<span class="hamburger-inner"></span>
@@ -39,79 +58,187 @@
 			<div class="icon">S</div>
 			<div class="caption">Sundlof</div>
 		</div>
+		
+		<!--	
+		<div class="sundlof-logo-inverse"> 
+			<div class="icon">S</div> 
+			<div class="caption">Sundlof</div> 
+		</div> 
+		-->
 
-		<div style="    display: block;
-    text-align: left;
-    padding: 0 0;
-    position: relative;
-    position: absolute;
-    top: 208px;
-    left: 30px;">
-		<ul>
-		<li class="has-menu">
-			<a href="/humanity-smaller-images-2">Humanity</a>
-			<ul class="sub-menu">
-			<li>
-				<a href="/street-documentary">Street &#038; Documentary</a>
-			</li>
-			<li>
-				<a href="/studio-portraits-people-ideas">Studio Portraits &#038; Ideas</a>
-			</li>
-			<li class="has-menu">
-				<a href="/international-3">International</a>
-				<ul class="sub-menu">
-					<li><a href="/india/">India</a></li>
-				</ul>
-			</li>
+		<div class="navigation-container">
+			<ul>
+				<li class="has-menu">
+					<a href="/humanity-smaller-images-2">Humanity</a>
+					<ul class="sub-menu">
+					<li>
+						<a href="/street-documentary">Street &#038; Documentary</a>
+					</li>
+					<li>
+						<a href="/studio-portraits-people-ideas">Studio Portraits &#038; Ideas</a>
+					</li>
+					<li class="has-menu">
+						<a href="/international-3">International</a>
+						<ul class="sub-menu">
+							<li><a href="/india/">India</a></li>
+						</ul>
+					</li>
+					</ul>
+				</li>
+				<li><a href="/business-industry/">Business &#038; Industry</a></li>
+				<li><a href="/health-society/">Health &#038; Society</a></li>
+				<li class="has-menu">
+					<a href="/projects/">Projects</a>
+					<ul class="sub-menu">
+						<li><a href="/projects/flashes-of-hope-portraits-of-children-and-families-battling-cancer/">Flashes of Hope</a></li>
+						<li><a href="/projects/on-the-line-out-to-dry/">On the Line &#8211; Out to Dry</a></li>
+						<li><a target="_blank" href="http://www.sundlof.com/bookACP.pdf">BackPorch &#8211; 1991- present</a></li>
+						<li><a target="_blank" href="http://sundlof.com/happyny.pdf">Happy New Years</a></li>
+					</ul>
+				</li>
+			<li><a href="/contact/">Contact</a></li>
 			</ul>
-		</li>
-		<li><a href="/business-industry/">Business &#038; Industry</a></li>
-		<li><a href="/health-society/">Health &#038; Society</a></li>
-		<li class="has-menu">
-			<a href="/projects/">Projects</a>
-			<ul class="sub-menu">
-				<li><a href="/projects/flashes-of-hope-portraits-of-children-and-families-battling-cancer/">Flashes of Hope</a></li>
-				<li><a href="/projects/on-the-line-out-to-dry/">On the Line &#8211; Out to Dry</a></li>
-				<li><a target="_blank" href="http://www.sundlof.com/bookACP.pdf">BackPorch &#8211; 1991- present</a></li>
-				<li><a target="_blank" href="http://sundlof.com/happyny.pdf">Happy New Years</a></li>
-			</ul>
-		</li>
-		<li><a href="/contact/">Contact</a></li>
-	</ul>
-	</div>
+		</div>
 	</nav>
+
+	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 	
-				
-<!--	
- <div class="sundlof-logo-inverse"> 
-	<div class="icon">S</div> 
-	 <div class="caption">Sundlof</div> 
- </div> -->
+		<!-- Background of PhotoSwipe. 
+			 It's a separate element as animating opacity is faster than rgba(). -->
+		<div class="pswp__bg"></div>
 
-<br />
+		<!-- Slides wrapper with overflow:hidden. -->
+		<div class="pswp__scroll-wrap">
 
-	<div class="container">
+			<!-- Container that holds slides. 
+				PhotoSwipe keeps only 3 of them in the DOM to save memory.
+				Don't modify these 3 pswp__item elements, data is added later on. -->
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
 
+			<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+			<div class="pswp__ui pswp__ui--hidden">
+
+				<div class="pswp__top-bar">
+
+					<!--  Controls are self-explanatory. Order can be changed. -->
+
+					<div class="pswp__counter"></div>
+
+					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+					<button class="pswp__button pswp__button--share" title="Share"></button>
+					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+					<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+					<!-- element will get class pswp__preloader--active when preloader is running -->
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+						  <div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					<div class="pswp__share-tooltip"></div> 
+				</div>
+
+				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+				</button>
+
+				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+				</button>
+
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" >
+	
 		<!-- Example row of columns -->
-		<div class="row">
-			<div class="col-md-4">
+		<div class="row gallery" itemscope itemtype="http://schema.org/ImageGallery">
+			<div class="col-xs-12 col-sm-6 col-md-4">
 				<section>
-					<h2>Slide Menus</h2>
-					<!-- Class "menu-open" gets applied to menu -->
-					<button class="btn btn-default" id="showLeft">Show/Hide Left Slide Menu</button>
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+						<a href="pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
+							<img src="pictures/040806-lou-14286x191.jpg" itemprop="thumbnail" alt="Image description" />
+						</a>
+						<figcaption itemprop="caption description">image caption</figcaption>
+					</figure>
+
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+						<a href="pictures/061021-florence-26-1.jpg" itemprop="contentUrl" data-size="953x638">
+							<img src="pictures/061021-florence-26-1286x191.jpg" itemprop="thumbnail" alt="Image description" />
+						</a>
+						<figcaption itemprop="caption description">image caption</figcaption>
+					</figure>
+
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+						<a href="pictures/100208-imn-diaper-20.jpg" itemprop="contentUrl" data-size="953x638">
+							<img src="pictures/100208-imn-diaper-20287x191.jpg" itemprop="thumbnail" alt="Image description" />
+						</a>
+						<figcaption itemprop="caption description">image caption</figcaption>
+					</figure>
 				</section>
 			</div>
-			<div class="col-md-4">
-				<h2>Heading</h2>
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-					nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-				<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<section>
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+						<a href="pictures/081219-metra-33-3.jpg" itemprop="contentUrl" data-size="977x638">
+							<img src="pictures/081219-metra-33-3293x191.jpg" itemprop="thumbnail" alt="Image description" />
+						</a>
+						<figcaption itemprop="caption description">image caption</figcaption>
+					</figure>
+
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+						<a href="pictures/081102-trlr-pk-19.jpg" itemprop="contentUrl" data-size="957x638">
+							<img src="pictures/081102-trlr-pk-19287x191.jpg" itemprop="thumbnail" alt="Image description" />
+						</a>
+						<figcaption itemprop="caption description">image caption</figcaption>
+					</figure>
+
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+						<a href="pictures/091110-22-india-0255-1.jpg" itemprop="contentUrl" data-size="853x498">
+							<img src="pictures/091110-22-india-0255-1304x178.jpg" itemprop="thumbnail" alt="Image description" />
+						</a>
+						<figcaption itemprop="caption description">image caption</figcaption>
+					</figure>
+				</section>
 			</div>
-			<div class="col-md-4">
-				<h2>Heading</h2>
-				<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod
-					semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-				<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<section>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+						<a href="pictures/131202_judge_castillo108.jpg" itemprop="contentUrl" data-size="957x638">
+							<img src="pictures/131202_judge_castillo108287x191.jpg" itemprop="thumbnail" alt="Image description" />
+						</a>
+						<figcaption itemprop="caption description">image caption</figcaption>
+					</figure>
+
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+						<a href="pictures/061024-siena-42-1.jpg" itemprop="contentUrl" data-size="953x638">
+							<img src="pictures/061024-siena-42-1286x191.jpg" itemprop="thumbnail" alt="Image description" />
+						</a>
+						<figcaption itemprop="caption description">image caption</figcaption>
+					</figure>
+
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+						<a href="pictures/061025-volterra-100-1-1.jpg" itemprop="contentUrl" data-size="953x638">
+							<img src="pictures/061025-volterra-100-1-1286x191.jpg" itemprop="thumbnail" alt="Image description" />
+						</a>
+						<figcaption itemprop="caption description">image caption</figcaption>
+					</figure>
+					</section>
 			</div>
 		</div>
 		<hr>
@@ -120,34 +247,52 @@
 		</footer>
 	</div>
 	<!-- /container -->
-	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
-	<script>
-			window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
-		</script>
-		
+	
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 
+<script src="photoswipe/photoswipe.min.js"></script> 
+<script src="photoswipe/photoswipe-ui-default.min.js"></script> 
+<script src="js/photoswipe.init.js"></script> 
 
 <script>
+	
+	initPhotoSwipe(".gallery");
+
 	var menuLeft = document.getElementById( 'menu-s1' );
 	var showLeft = document.getElementById( 'hamburger');
-	var showLeft2 = document.getElementById( 'showLeft');
+	//var showLeft2 = document.getElementById( 'showLeft');
 
+	$("nav.menu:not(nav.menu.menu-open)").one("mouseover", function(){toggleMenu();});
+	
+	//$(document).on("click", ":not(#menu-s1)", console.log("doc click"));
+	
 	var toggleMenu = function() {
 		var self = this;
 		$(menuLeft).toggleClass("menu-open");
 
 		window.setTimeout(function() {
-			$(self).toggleClass('active is-active');
+			$(showLeft).toggleClass('is-active');
+			if(!$(showLeft).hasClass('is-active')){
+				$("nav.menu:not(nav.menu.menu-open)").one("mouseover", function(){toggleMenu();});
+			}
 		}, 400);
 		
 		//classie.toggle( document.body, 'menu-push-toright' );
 	};
 
 	showLeft.onclick = toggleMenu;
-	showLeft2.onclick = toggleMenu;
+	//showLeft2.onclick = toggleMenu;
+	
+	$("nav.menu ul li.has-menu:not(li.has-menu.opened)").mouseover(
+		function () {
+			console.log("1 over li not opened");
+			
+			$(this).addClass("opened");
+			$(this).find("> ul.sub-menu").slideDown("fast");
+		});
+	
 </script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

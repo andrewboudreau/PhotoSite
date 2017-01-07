@@ -99,20 +99,6 @@ ul {
 	}
 }
 
-.gallery {
-	section {
-		padding-top:150px;
-	}
-
-	figure {
-		min-height: 211px;
-	}
-	
-	section:last-child {
-		float:right;
-	}
-}
-
 /* General styles for all menus */
 .navigation-container {
 	display: block;
@@ -211,7 +197,7 @@ nav.menu ul {
     list-style:none;
     margin:0;
     padding:0;
-    width:180px
+    width:200px;
 }
 
 nav.menu ul li {

@@ -69,7 +69,25 @@ ul {
   .sundlof-logo-inverse .caption {
     color: #00687B; }
 
+.gallery section {
+  padding-top: 150px; }
+
+.gallery figure {
+  min-height: 211px; }
+
+.gallery section:last-child {
+  float: right; }
+
 /* General styles for all menus */
+.navigation-container {
+  display: block;
+  text-align: left;
+  padding: 0 0;
+  position: relative;
+  position: absolute;
+  top: 208px;
+  left: 30px; }
+
 .menu {
   font-family: 'Oswald';
   font-weight: bold;
@@ -144,6 +162,7 @@ nav.menu ul li:first-child {
   padding-top: 0px; }
 
 nav.menu ul li ul.sub-menu li {
+  padding: 1px 0 0 10px;
   background: none;
   padding-top: 0px; }
 
@@ -207,11 +226,11 @@ nav.menu ul.sub-menu li.has-menu ul li a:before {
   content: "-" !important; }
 
 nav.menu ul.sub-menu li ul.sub-menu {
-  padding: 5px 0 0 10px;
+  padding: 1px 0 0 10px;
   display: none;
   position: relative;
   z-index: 99;
-  margin-bottom: 7px; }
+  margin-bottom: 1px; }
 
 nav.menu ul.sub-menu li ul.sub-menu li a:before {
   content: '';
