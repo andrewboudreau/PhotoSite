@@ -58,7 +58,6 @@ var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) 
         items;
 
     items = parseHtmlGalleryElements(galleryElement);
-
     // define options (if needed)
     options = {
 
