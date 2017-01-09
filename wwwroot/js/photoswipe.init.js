@@ -50,6 +50,8 @@ var parseHtmlGalleryElements = function(gallery) {
 }
 
 var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+    console.log("opening photoswipe");
+    
     var pswpElement = document.querySelectorAll('.pswp')[0],
         gallery,
         options,
@@ -70,8 +72,11 @@ var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) 
                 rect = thumbnail.getBoundingClientRect(); 
 
             return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
-        }
+        },
 
+        addCaptionHTMLFn: function () {
+            return false;    
+        }
     };
 
     // PhotoSwipe opened from URL
@@ -94,7 +99,7 @@ var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) 
     }
 
     // exit if index not found
-    if( isNaN(options.index) ) {
+    if(isNaN(options.index)) {
         return;
     }
 
@@ -116,7 +121,7 @@ var onThumbnailClick = function(e) {
         return;
     }
 
-    var index = $(".gallery figure").index(closestFigure)
+    var index = $(".gallery figure").index(closestFigure);
     console.log(index + " item clicked");
 
     if (index >= 0) {
@@ -136,8 +141,8 @@ var initPhotoSwipe = function(gallerySelector)
     // loop through all gallery elements and bind events
     var galleryElements = $(gallerySelector);
     galleryElements.each(function(index, item) {
-        console.log(index + " assigning global uniqueness to" + item);
-        $(item).attr('data-pswp-uid', index);
+        console.log((index+1) + " assigning global uniqueness to" + item);
+        $(item).attr('data-pswp-uid', index + 1);
         $(item).on("click", "figure", onThumbnailClick);
     });
 

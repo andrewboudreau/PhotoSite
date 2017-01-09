@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	
 	<script src="js/vendor/jquery-3.1.1.min.js"></script>	
+
 	<!-- Core CSS file -->
 	<link rel="stylesheet" href="photoswipe/photoswipe.css"> 
 
@@ -23,17 +24,6 @@
      - .png and .svg icons sprite, 
      - preloader.gif (for browsers that do not support CSS animations) -->
 	<link rel="stylesheet" href="photoswipe/default-skin/default-skin.css"> 
-	<style>
-		.hamburger {
-			display:none;
-		}
-		
-		.hamburger.is-active, 
-		.menu-mobile .hamburger{
-			display:inline-block!important;
-		}
-	</style>
-
 	<script src="js/modernizr-custom.js"></script>
 
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>	
@@ -44,10 +34,13 @@
 
 <body class="menu-push">
 
+<div style="z-index:50;cursor:pointer;position:absolute; right:10px; bottom:10px; background:darkslategrey; width:20px; height:20px;" onclick="$('section').matchHeight();"></div>
+
+<!-- Mobile version of the Menu -->
 	<nav class="menu menu-mobile visible-xs visible-sm">
 		<div style="position:relative; z-index: 10;">
-			<div style="position:absolute; left:5px;" onclick="$('body').toggleClass('menu-push-tobottom'); $('.menu-mobile li.has-menu').addClass('opened').find('ul.sub-menu').show();">
-				<div id="hamburger" class="hamburger hamburger--squeeze" style="padding-right:2px;" type="button" onclick="toggleMenu">
+			<div style="position:absolute; left:5px;" onclick="">
+				<div id="hamburger" class="hamburger hamburger--squeeze" style="padding-right:2px;" type="button">
 				<span class="hamburger-box">
 					<span class="hamburger-inner"></span>
 				</span>
@@ -89,22 +82,23 @@
 		</div>
 	</nav>
 
-	<nav class="menu menu-vertical menu-left hidden-xs hidden-sm" id="menu-s1">
+<!-- Desktop version of the Menu -->
+	<nav class="menu menu-vertical menu-left hidden-xs hidden-sm" id="menu-s1" class="display:none;">
 		<div style="position:relative; z-index: 10;">
-			<div style="position:absolute; right:5px;">
-				<div id="hamburger" class="hamburger hamburger--squeeze" style="padding-right:2px;" type="button">
+			<div style="position:absolute; right:7px;">
+				<div id="hamburger" class="hamburger hamburger--plus" style="padding-right:2px;" type="button">
 				<span class="hamburger-box">
 					<span class="hamburger-inner"></span>
 				</span>
 				</div>
 			</div>
 		</div>
-	
-		<div class="sundlof-logo">
-			<div class="icon">S</div>
-			<div class="caption">Sundlof</div>
-		</div>
-		
+			<div class="sundlof-logo">
+				<div class="icon">S</div>
+				<div class="caption"><a href="/">Sundlof</a></div>
+			</div>
+		</a>
+
 		<!--	
 		<div class="sundlof-logo-inverse"> 
 			<div class="icon">S</div> 
@@ -114,7 +108,7 @@
 
 		<div class="navigation-container">
 			<ul>
-				<li class="has-menu">
+				<li>
 					<a href="/humanity-smaller-images-2">Humanity</a>
 					<ul class="sub-menu">
 					<li>
@@ -123,7 +117,7 @@
 					<li>
 						<a href="/studio-portraits-people-ideas">Studio Portraits &#038; Ideas</a>
 					</li>
-					<li class="has-menu">
+					<li>
 						<a href="/international-3">International</a>
 						<ul class="sub-menu">
 							<li><a href="/india/">India</a></li>
@@ -133,7 +127,7 @@
 				</li>
 				<li><a href="/business-industry/">Business &#038; Industry</a></li>
 				<li><a href="/health-society/">Health &#038; Society</a></li>
-				<li class="has-menu">
+				<li>
 					<a href="/projects/">Projects</a>
 					<ul class="sub-menu">
 						<li><a href="/projects/flashes-of-hope-portraits-of-children-and-families-battling-cancer/">Flashes of Hope</a></li>
@@ -208,6 +202,7 @@
 		</div>
 	</div>
 
+	<!-- Photo Gallery -->
 	<div class="container" >
 		<div class="row gallery" itemscope itemtype="http://schema.org/ImageGallery">
 			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
@@ -227,8 +222,8 @@
 					</figure>
 
 					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="pictures/100208-imn-diaper-20.jpg" itemprop="contentUrl" data-size="953x638">
-							<img src="pictures/100208-imn-diaper-20287x191.jpg" itemprop="thumbnail" alt="Image description" />
+						<a href="pictures/1120023-1-ladylib-spark.jpg" itemprop="contentUrl" data-size="851x850">
+							<img src="pictures/1120023-1-ladylib-spark.jpg" itemprop="thumbnail" alt="Image description" />
 						</a>
 						<figcaption itemprop="caption description">image caption</figcaption>
 					</figure>
@@ -244,6 +239,12 @@
 						<figcaption itemprop="caption description">image caption</figcaption>
 					</figure>
 
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+						<a href="pictures/1120023-1-ladylib-spark.jpg" itemprop="contentUrl" data-size="851x850">
+							<img src="pictures/1120023-1-ladylib-spark.jpg" itemprop="thumbnail" alt="Image description" />
+						</a>
+						<figcaption itemprop="caption description">image caption</figcaption>
+					</figure>
 					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 						<a href="pictures/081102-trlr-pk-19.jpg" itemprop="contentUrl" data-size="957x638">
 							<img src="pictures/081102-trlr-pk-19287x191.jpg" itemprop="thumbnail" alt="Image description" />
@@ -316,6 +317,10 @@
 	<footer style="text-align:center;width:100%;position:absolute; bottom:0;">
 		<p>&copy; <span class="sundlof-font">sundlof</span> <span class="copyright-year sundlof-font">2017<span></p>
 	</footer>
+
+
+
+<!-- Javascript -->
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
@@ -326,44 +331,70 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
 
 <script>
-	
-	
-
 	initPhotoSwipe(".gallery");
 
-	//var menuLeft = document.getElementById( 'menu-s1' );
-	var showLeft = $('.hamburger');
-	//var showLeft2 = document.getElementById( 'showLeft');
+	$(".sundlof-logo").click(function(){
+		window.location.href = "/";
+	})
 
-	$("nav.menu.menu-left:not(nav.menu.menu-open)").one("mouseover", function(){toggleMenu();});
-	
-	//$(document).on("click", ":not(#menu-s1)", console.log("doc click"));
-	
-	var toggleMenu = function() {
-		var self = this;
+	$('.menu').find('li:has(ul)').addClass('has-menu');
+    $('.menu .navigation-container > ul > li.has-menu').addClass('level1');
+    $('.menu').find('li.level1').find('ul.sub-menu').children('li.has-menu').addClass('level2');
+    $('.menu').find('li.has-menu').children('a').addClass('menu-toggler');
+
+	$('.menu-vertical').hover(function(){
+		$(this).addClass('hovered');
+		$(this).find('.hamburger').addClass("is-active");
+	},function(){
+		$(this).removeClass('hovered');
+		$(this).find('.hamburger').removeClass("is-active");
+	});
+
+	$('.menu-toggler').hover(function() {
+		var toggler = $(this);
+
+        if(toggler.closest('li').find('ul.sub-menu').css('display') != 'block') {
+            if(toggler.closest('li').hasClass('level1')) {
+                $('.sub-menu').slideUp(500);
+                $('.sub-menu').closest('li').removeClass('opened');
+                toggler.closest('li').children('.sub-menu').slideDown(500);
+                toggler.closest('li').addClass('opened');
+            }
+            else {
+                $('.level2').find('.sub-menu').slideUp(500);
+                toggler.closest('li').children('.sub-menu').slideDown(500);
+                toggler.closest('li').addClass('opened');
+            }
+        }
+
+        $('.menu').find('.opened').each(function(){
+            toggler.closest('li.has-menu').addClass('opened');
+        });
+    });
+
+
+	$(".menu-mobile").click(function(e) {
+		var target = $(e.target);
+		if (target.is("ul, li, a")) {
+			return true;
+		}
+
+		$('body').toggleClass('menu-push-tobottom'); 
 		$(".menu").toggleClass("menu-open");
+		$('.menu-mobile li.has-menu').addClass('opened').find('ul.sub-menu').show();
 
 		window.setTimeout(function() {
-			showLeft.toggleClass('is-active');
-			if(!showLeft.hasClass('is-active')){
-				$("nav.menu.menu-left:not(nav.menu.menu-open)").one("mouseover", function(){toggleMenu();});
-			}
+			 $('.menu-mobile .hamburger').toggleClass('is-active');
 		}, 400);
-		
-		//classie.toggle( document.body, 'menu-push-toright' );
-	};
+	});
 
-	showLeft.click(toggleMenu);
-	//showLeft2.onclick = toggleMenu;
+	window.setTimeout(function()	{
+		$(".menu-left").addClass("breath");
+	}, 1000);
 	
-	$("nav.menu ul li.has-menu:not(li.has-menu.opened)").mouseover(
-		function () {
-			console.log("1 over li not opened");
-			
-			$(this).addClass("opened");
-			$(this).find("> ul.sub-menu").slideDown("fast");
-		});
-
+	window.setTimeout(function()	{
+		$(".menu-left").removeClass("breath");
+	}, 1500);
 </script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

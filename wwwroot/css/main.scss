@@ -60,6 +60,7 @@ ul {
 	font-family: $sundlof-font;
 	background-color: $sundlof-background;
 	
+	cursor:pointer;
 	position:relative;
 	width:100%; 
 	height:180px;
@@ -81,8 +82,12 @@ ul {
 		padding-top:7px;
 		font-size:23pt;
 		color: $sundlof-foreground;
-		
 		@include center-align-text;
+
+		a, a:hover {
+			text-decoration: none;
+			padding:0;
+		}
 	}
 }
 
@@ -117,6 +122,10 @@ ul {
 				width:100%;
 			}
 		}
+
+		figcaption {
+			display:none;
+		}
 	}
 	
 	section:last-child {
@@ -143,15 +152,18 @@ ul {
 	width:100%;
 	position:relative;
 	z-index: 100;
+	overflow: hidden;
+	cursor: pointer;
 
 	.navigation-container {
 		width:100%;
 		top:0px;
 		margin-left: 35px;
+		margin-top: 40px;
+
 		display: none;
 		text-align: left;
 		padding: 0 0;
-		padding-top: 36px;
 		position: relative;
 		
 		ul {
@@ -208,11 +220,6 @@ ul {
 	a:hover {
 		background: $sundlof-background;
 	}
-
-	a:active {
-		background: $sundlof-foreground;
-		color: $sundlof-background;
-	}
 }
 
 /* Orientation-dependent styles for the content of the menu */
@@ -230,6 +237,10 @@ ul {
 /* Vertical menu that slides from the left or right */
 .menu-left {
 	left: -205px;
+}
+
+.menu-left.breath {
+	left: -180px;
 }
 
 .menu-left.menu-open {
@@ -281,6 +292,10 @@ ul {
 
 /*header
 ---------*/
+nav.menu.hovered {
+    left:0px!important;
+}
+
 nav.menu ul {
     list-style:none;
     margin:0;
