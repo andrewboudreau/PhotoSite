@@ -36,6 +36,7 @@ ul {
 .sundlof-logo, .sundlof-logo-inverse {
   font-family: Sundlof;
   background-color: #00687B;
+  cursor: pointer;
   position: relative;
   width: 100%;
   height: 180px;
@@ -61,6 +62,9 @@ ul {
     margin-bottom: 0;
     margin-right: auto;
     text-align: center; }
+    .sundlof-logo .caption a, .sundlof-logo-inverse .caption a, .sundlof-logo .caption a:hover, .sundlof-logo-inverse .caption a:hover {
+      text-decoration: none;
+      padding: 0; }
 
 .sundlof-logo-inverse {
   background-color: #E1E1E1; }
@@ -81,6 +85,8 @@ ul {
       width: 100%; }
       .gallery figure a img {
         width: 100%; }
+    .gallery figure figcaption {
+      display: none; }
   .gallery section:last-child {
     float: right; }
 
@@ -100,15 +106,17 @@ ul {
   height: 52px;
   width: 100%;
   position: relative;
-  z-index: 100; }
+  z-index: 100;
+  overflow: hidden;
+  cursor: pointer; }
   .menu-mobile .navigation-container {
     width: 100%;
     top: 0px;
     margin-left: 35px;
+    margin-top: 40px;
     display: none;
     text-align: left;
     padding: 0 0;
-    padding-top: 36px;
     position: relative; }
     .menu-mobile .navigation-container ul {
       width: 100%; }
@@ -146,9 +154,6 @@ ul {
     font-weight: 300; }
   .menu a:hover {
     background: #00687B; }
-  .menu a:active {
-    background: #E1E1E1;
-    color: #00687B; }
 
 /* Orientation-dependent styles for the content of the menu */
 .menu-vertical {
@@ -162,6 +167,9 @@ ul {
 /* Vertical menu that slides from the left or right */
 .menu-left {
   left: -205px; }
+
+.menu-left.breath {
+  left: -180px; }
 
 .menu-left.menu-open {
   left: 0px; }
@@ -198,6 +206,9 @@ ul {
 
 /*header
 ---------*/
+nav.menu.hovered {
+  left: 0px !important; }
+
 nav.menu ul {
   list-style: none;
   margin: 0;
