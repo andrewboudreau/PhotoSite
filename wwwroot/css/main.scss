@@ -56,6 +56,57 @@ ul {
 	color: $sundlof-foreground;
 }
 
+.sundlof-title {
+	@include center-align-text;
+	color: $sundlof-foreground;
+	margin-top:15px;
+
+	.primary {
+		font-family: $sundlof-font;
+		font-size: 60px;
+		color: $sundlof-background;
+	}	
+	
+	.secondary {
+		font-family: 'Sorts Mill Goudy', serif;
+		font-size: 25px;
+		letter-spacing: 15px;
+		margin-top:-40px;
+		opacity: .7;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.sundlof-title {
+		margin-top: 70px;
+		
+		.primary {
+			font-size:50px;
+		}
+
+		.secondary {
+			font-size: 20px;
+			letter-spacing: 15px;
+			margin-top:-30px;
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.sundlof-title {
+		margin-top: 70px;
+		
+		.primary {
+			font-size:40px;
+		}
+		.secondary {
+			font-size: 20px;
+			letter-spacing: 8px;
+			margin-top:-28px;
+		}
+	}
+}
+
 .sundlof-logo {
 	font-family: $sundlof-font;
 	background-color: $sundlof-background;
@@ -106,7 +157,7 @@ ul {
 }
 
 .gallery {
-	margin-top:150px;
+	margin-top:42px;
 
 	section {
 		width:100%;
@@ -276,18 +327,6 @@ ul {
 	// -webkit-transition: all 0.3s ease;
 	// -moz-transition: all 0.3s ease;
 	// transition: all 0.3s ease;
-}
-
-@media (max-width: 991px) and (min-width: 768px) {
-	.gallery {
-		margin-top: 72px;
-	}
-}
-
-@media (max-width: 767px){
-	.gallery {
-		margin-top: 72px;
-	}
 }
 
 /*header

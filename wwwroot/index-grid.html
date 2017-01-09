@@ -8,8 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-	<link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">	
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>	
 	<script src="js/vendor/modernizr-custom.js"></script>
 	
 	<link rel="stylesheet" href="photoswipe/photoswipe.css"> 
@@ -194,17 +193,6 @@
 
 	<!-- Photo Gallery -->
 	<div class="container" >
-
-		<!-- sundlof page title -->
-		<div class="sundlof-title">
-			<div class="primary">
-				Sundlof
-			</div>
-			<div class="secondary">
-				John Sundlof Photography
-			</div>
-		</div>
-
 		<div class="row gallery" itemscope itemtype="http://schema.org/ImageGallery">
 			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
 				<section>
@@ -322,10 +310,8 @@
 <script src="js/vendor/jquery-3.1.1.min.js"></script>	
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/jquery.matchHeight.min.js"></script>
-<script src="js/vendor/touchwipe.min.js"></script>
 <script src="photoswipe/photoswipe.min.js"></script> 
-<script src="photoswipe/photoswipe-ui-default.min.js"></script>
-
+<script src="photoswipe/photoswipe-ui-default.min.js"></script> 
 <script src="js/main.js"></script>
 <script src="js/photoswipe.init.js"></script> 
 
@@ -394,15 +380,6 @@
 	window.setTimeout(function()	{
 		$(".menu-left").removeClass("breath");
 	}, 1500);
-
-	$("nav").touchwipe({
-		wipeUp: function() { 
-			$(".menu-mobile").click();
-		},
-		wipeDown: function() { 
-			$(".menu-mobile").click();
-		}
-	})
 </script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
