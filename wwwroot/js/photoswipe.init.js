@@ -1,4 +1,4 @@
-
+(function(){
 // parse picture index and gallery index from URL (#&pid=1&gid=2)
 var photoswipeParseHash = function() {
     var hash = window.location.hash.substring(1),
@@ -133,14 +133,12 @@ var onThumbnailClick = function(e) {
 
 var initPhotoSwipe = function(gallerySelector)
 {
-    console.log("init photo swipe");
     var items = parseHtmlGalleryElements(".gallery");
-    console.log("parsed " + items.length)
+    console.log(items.length + " photos")
 
     // loop through all gallery elements and bind events
     var galleryElements = $(gallerySelector);
     galleryElements.each(function(index, item) {
-        console.log((index+1) + " assigning global uniqueness to" + item);
         $(item).attr('data-pswp-uid', index + 1);
         $(item).on("click", "figure", onThumbnailClick);
     });
@@ -151,3 +149,6 @@ var initPhotoSwipe = function(gallerySelector)
         openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
     }
 }
+
+initPhotoSwipe(".gallery");
+}());

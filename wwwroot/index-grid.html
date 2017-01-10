@@ -8,11 +8,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>	
-	<script src="js/vendor/modernizr-custom.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">	
+	<script src="js/vendor/modernizr-custom.min.js"></script>
 	
-	<link rel="stylesheet" href="photoswipe/photoswipe.css"> 
-	<link rel="stylesheet" href="photoswipe/default-skin/default-skin.css"> 
+	<link rel="stylesheet" href="/css/photoswipe/photoswipe.css"> 
+	<link rel="stylesheet" href="/css/photoswipe/default-skin/default-skin.css"> 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/hamburger.css">
@@ -193,6 +194,17 @@
 
 	<!-- Photo Gallery -->
 	<div class="container" >
+
+		<!-- sundlof page title -->
+		<div class="sundlof-title">
+			<div class="primary">
+				Sundlof
+			</div>
+			<div class="secondary">
+				John Sundlof Photography
+			</div>
+		</div>
+
 		<div class="row gallery" itemscope itemtype="http://schema.org/ImageGallery">
 			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
 				<section>
@@ -302,85 +314,22 @@
 		</div>
 	</div>
 	
-	<footer style="text-align:center;width:100%;position:absolute; bottom:0;">
+	<footer style="text-align:center;width:100%;position:relative; bottom:0;">
 		<p>&copy; <span class="sundlof-font">sundlof</span> <span class="copyright-year sundlof-font">2017<span></p>
 	</footer>
 
 <!-- Javascript -->
+<!--<script src="js/site.js"></script>-->
 <script src="js/vendor/jquery-3.1.1.min.js"></script>	
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/jquery.matchHeight.min.js"></script>
-<script src="photoswipe/photoswipe.min.js"></script> 
-<script src="photoswipe/photoswipe-ui-default.min.js"></script> 
+<script src="js/vendor/touchwipe.min.js"></script>
+<script src="js/vendor/photoswipe.min.js"></script> 
+<script src="js/vendor/photoswipe-ui-default.min.js"></script>
+
 <script src="js/main.js"></script>
 <script src="js/photoswipe.init.js"></script> 
-
-<script>
-	initPhotoSwipe(".gallery");
-
-	$(".sundlof-logo").click(function(){
-		window.location.href = "/";
-	})
-
-	$('.menu').find('li:has(ul)').addClass('has-menu');
-    $('.menu .navigation-container > ul > li.has-menu').addClass('level1');
-    $('.menu').find('li.level1').find('ul.sub-menu').children('li.has-menu').addClass('level2');
-    $('.menu').find('li.has-menu').children('a').addClass('menu-toggler');
-
-	$('.menu-vertical').hover(function(){
-		$(this).addClass('hovered');
-		$(this).find('.hamburger').addClass("is-active");
-	},function(){
-		$(this).removeClass('hovered');
-		$(this).find('.hamburger').removeClass("is-active");
-	});
-
-	$('.menu-toggler').hover(function() {
-		var toggler = $(this);
-
-        if(toggler.closest('li').find('ul.sub-menu').css('display') != 'block') {
-            if(toggler.closest('li').hasClass('level1')) {
-                $('.sub-menu').slideUp(500);
-                $('.sub-menu').closest('li').removeClass('opened');
-                toggler.closest('li').children('.sub-menu').slideDown(500);
-                toggler.closest('li').addClass('opened');
-            }
-            else {
-                $('.level2').find('.sub-menu').slideUp(500);
-                toggler.closest('li').children('.sub-menu').slideDown(500);
-                toggler.closest('li').addClass('opened');
-            }
-        }
-
-        $('.menu').find('.opened').each(function(){
-            toggler.closest('li.has-menu').addClass('opened');
-        });
-    });
-
-
-	$(".menu-mobile").click(function(e) {
-		var target = $(e.target);
-		if (target.is("ul, li, a")) {
-			return true;
-		}
-
-		$('body').toggleClass('menu-push-tobottom'); 
-		$(".menu").toggleClass("menu-open");
-		$('.menu-mobile li.has-menu').addClass('opened').find('ul.sub-menu').show();
-
-		window.setTimeout(function() {
-			 $('.menu-mobile .hamburger').toggleClass('is-active');
-		}, 400);
-	});
-
-	window.setTimeout(function()	{
-		$(".menu-left").addClass("breath");
-	}, 1000);
-	
-	window.setTimeout(function()	{
-		$(".menu-left").removeClass("breath");
-	}, 1500);
-</script>
+<script src="js/menu.js"></script> 
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <!-- <script> -->
