@@ -61,7 +61,7 @@ window.setTimeout(function()	{
     $(".menu-left").removeClass("breath");
 }, 1500);
 
-$("nav").touchwipe({
+$(".menu-mobile:not(.navigation-container)").touchwipe({
     wipeUp: function() { 
         $(".menu-mobile").click();
     },
