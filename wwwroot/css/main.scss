@@ -58,12 +58,13 @@ ul {
 
 .sundlof-title {
 	@include center-align-text;
-	color: $sundlof-foreground;
+	color: #E1E1E1;
 	margin-top:15px;
 
 	.primary {
 		font-family: $sundlof-font;
 		font-size: 60px;
+		// color: $sundlof-background;
 		color: $sundlof-background;
 	}	
 	
@@ -71,8 +72,8 @@ ul {
 		font-family: 'Sorts Mill Goudy', serif;
 		font-size: 25px;
 		letter-spacing: 15px;
-		margin-top:-40px;
-		opacity: .7;
+		margin-top:-38px;
+		opacity: 1;
 	}
 }
 
@@ -99,10 +100,11 @@ ul {
 		.primary {
 			font-size:40px;
 		}
+		
 		.secondary {
-			font-size: 20px;
-			letter-spacing: 8px;
-			margin-top:-28px;
+			font-size: 11px;
+			letter-spacing: 4px;
+			margin-top: -20px;
 		}
 	}
 }
