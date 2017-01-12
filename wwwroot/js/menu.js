@@ -38,6 +38,7 @@ $('.menu-toggler').hover(function() {
     });
 });
 
+$(".menu li a").attr("href", "/");
 $(".menu-mobile").click(function(e) {
     var target = $(e.target);
     if (target.is("ul, li, a")) {
