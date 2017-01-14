@@ -47,9 +47,9 @@ ul {
     color: #00687B; }
   .sundlof-title .secondary {
     font-family: 'Sorts Mill Goudy', serif;
-    font-size: 25px;
-    letter-spacing: 15px;
-    margin-top: -38px;
+    font-size: 23px;
+    letter-spacing: 12px;
+    margin-top: -45px;
     opacity: 1; }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -59,8 +59,8 @@ ul {
       font-size: 50px; }
     .sundlof-title .secondary {
       font-size: 20px;
-      letter-spacing: 15px;
-      margin-top: -30px; } }
+      letter-spacing: 12px;
+      margin-top: -38px; } }
 
 @media (max-width: 767px) {
   .sundlof-title {
@@ -70,7 +70,7 @@ ul {
     .sundlof-title .secondary {
       font-size: 11px;
       letter-spacing: 4px;
-      margin-top: -20px; } }
+      margin-top: -28px; } }
 
 .sundlof-logo, .sundlof-logo-inverse {
   font-family: Sundlof;
@@ -118,8 +118,7 @@ ul {
   .gallery section {
     width: 100%; }
   .gallery figure {
-    width: 100%;
-    min-height: 211px; }
+    width: 100%; }
     .gallery figure a {
       width: 100%; }
       .gallery figure a img {
