@@ -324,9 +324,9 @@
 
 	<div class="menu-buttons">
 		<button class="btn btn-default save-data menu-button">Save Margins</button>
-		<a class="btn btn-default download-data menu-button" href="">Download Margins</a>
-		<button class="btn btn-default menu-button toggle-sortable">Toggle Sortable</button>
-		<button class="btn btn-default menu-button toggle-borders">Toggle All Borders</button>
+		<a class="btn btn-default download-data menu-button disabled" href="">Download Margins</a>
+		<button class="btn btn-default menu-button toggle-sortable">Enable Reordering</button>
+		<button class="btn btn-default menu-button toggle-borders">Show Borders</button>
 	</div>
 	</div>
 <!-- Javascript -->
@@ -391,7 +391,7 @@
 	var dragdrop = null;
 	$(".toggle-sortable").on("click", function(){
 		if(dragdrop === null){
-			$(this).addClass("btn-warning");
+			$(this).addClass("btn-warning").text("Disable Reordering");
 			console.log("enable sortable");
 			dragdrop = $("section").sortable({
 				connectWith: "section",
@@ -399,7 +399,7 @@
 				tolerance: "pointer"
 			}).disableSelection();
 		} else {
-			$(this).removeClass("btn-warning");
+			$(this).removeClass("btn-warning").text("Enable Reordering");
 			console.log("disable sortable");
 			dragdrop = null;
 			$("section").sortable("destroy");
@@ -408,11 +408,11 @@
 
 	$(".toggle-borders").click(function(){
 		if($(".gallery figure").find(".arrow").length <= 0) {
-			$(this).addClass("btn-warning");
+			$(this).addClass("btn-warning").text("Hide Borders");
 			$(".gallery figure").append("<div class='arrow border'></div>");
 		} else {
 			$(".gallery figure").find(".arrow").remove();
-			$(this).removeClass("btn-warning");
+			$(this).removeClass("btn-warning").text("DisaShowble Borders");
 		}
 	});
 
@@ -443,7 +443,7 @@
 		var elementToEdit = $(this).closest("figure");
 		var propertyName = "margin-bottom";
 		var sign = $(this).hasClass("up-arrow") ? -1 : 1;
-		var propertyValue = Number.parseInt( elementToEdit.css(propertyName));
+		var propertyValue = Number.parseInt(elementToEdit.css(propertyName));
 
 		elementToEdit.css(propertyName, propertyValue + (sign * 1));
 	});
@@ -451,6 +451,7 @@
 
 	var spacings = [];
 	$(".save-data").on("click", function () {
+		$("download-data").removeClass("disabled");
 		var margins = [];
 		$(".gallery figure").each(function(index, item){
 			// save all the margins
