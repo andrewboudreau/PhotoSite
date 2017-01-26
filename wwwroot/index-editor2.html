@@ -482,6 +482,15 @@
 		console.log("margins saved");
 	});
 
+	var restoreMargins = function(data){
+		var json = JSON.parse(decodeURIComponent(data));
+		
+		$.each(json[0].margins, function(index, item) {
+			debugger;
+			$("a[href=" + item.image  + "]").closest("figure").css("margin-bottom", item["margin-bottom"]);
+		});
+	};
+
 	var customOverride = true;
 	window.onbeforeunload = function(e) {
 		if(!customOverride){

@@ -1,0 +1,22 @@
+.gallery {
+  margin-top: 42px; }
+  .gallery section {
+    width: 100%; }
+  .gallery figure {
+    width: 100%;
+    margin-bottom: 10px; }
+    .gallery figure a {
+      width: 100%; }
+      .gallery figure a img {
+        width: 100%; }
+    .gallery figure figcaption {
+      display: none; }
+  .gallery section:last-child {
+    float: right; }
+  .gallery .headline {
+    color: #00687B;
+    font-weight: bolder;
+    text-align: center;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px; }
