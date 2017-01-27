@@ -4,15 +4,15 @@ $("body").append('<div class="visible-sm-block visible-xs-block" id="mobile-scre
 
 var isMobile = function () {
     return $("#mobile-screen").is(":visible");
-}
+};
 
 var isDesktop = function () {
     return $("#desktop-screen").is(":visible");
-}
+};
 
 $(".sundlof-logo").click(function() {
     window.location.href = "/";
-})
+});
 
 if($(".headline").text() == ""){
     $(".headline").hide();

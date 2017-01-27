@@ -29,9 +29,9 @@
 
     <!-- Mobile version of the Menu -->
     <nav class="menu menu-mobile visible-xs visible-sm">
-        <div style="position:relative; z-index: 10;">
-            <div style="position:absolute; left:5px;" onclick="">
-                <div id="hamburger" class="hamburger hamburger--squeeze" style="padding-right:2px;" type="button">
+        <div class="hamburger-positioning-anchor">
+            <div class="hamburger-positioning">
+                <div id="hamburger" class="hamburger hamburger--squeeze" type="button">
                     <span class="hamburger-box">
 					<span class="hamburger-inner"></span>
                     </span>
@@ -75,9 +75,9 @@
 
     <!-- Desktop version of the Menu -->
     <nav class="menu menu-vertical menu-left hidden-xs hidden-sm" id="menu-s1">
-        <div style="position:relative; z-index: 10;">
-            <div style="position:absolute; right:7px;">
-                <div class="hamburger hamburger--plus" style="padding-right:2px;" type="button">
+        <div class="hamburger-positioning-anchor">
+            <div class="hamburger-positioning">
+                <div class="hamburger hamburger--plus" type="button">
                     <span class="hamburger-box">
 					<span class="hamburger-inner"></span>
                     </span>
@@ -131,67 +131,6 @@
         </div>
     </nav>
 
-    <!-- markup used by popup image viewer. Must have class pswp. -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-        <!-- Background of PhotoSwipe. 
-			 It's a separate element as animating opacity is faster than rgba(). -->
-        <div class="pswp__bg"></div>
-
-        <!-- Slides wrapper with overflow:hidden. -->
-        <div class="pswp__scroll-wrap">
-
-            <!-- Container that holds slides. 
-				PhotoSwipe keeps only 3 of them in the DOM to save memory.
-				Don't modify these 3 pswp__item elements, data is added later on. -->
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-            <div class="pswp__ui pswp__ui--hidden">
-
-                <div class="pswp__top-bar">
-
-                    <!--  Controls are self-explanatory. Order can be changed. -->
-
-                    <div class="pswp__counter"></div>
-
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                    <button class="pswp__button pswp__button--share" title="Share"></button>
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                    <!-- element will get class pswp__preloader--active when preloader is running -->
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div>
-
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-				</button>
-
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-				</button>
-
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Photo Gallery -->
     <div class="container">
 
@@ -201,7 +140,7 @@
             <div class="secondary">John Sundlof Photography</div>
         </div>
         <div class="row gallery" itemscope itemtype="http://schema.org/ImageGallery">
-            <!-- InstanceBeginEditable name="gallery" -->
+        <!-- InstanceBeginEditable name="gallery" -->
 		  <div class="col-xs-12">
            <div class="headline">Portraits of Children and Their Families Battling Cancer (more images to come)</div>
 		   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"> <a href="pictures/080919-foh-46-1.jpg" itemprop="contentUrl" data-size="1063x850"> 
@@ -213,9 +152,9 @@
         </div>
     </div>
 
-    <footer style="text-align:center;width:100%;position:relative; bottom:0;">
-        &copy; <span class="sundlof-font">sundlof</span> <span class="copyright-year sundlof-font">2017</span>
-	</footer>
+    <footer>
+    &copy; <span class="sundlof-font">sundlof</span> <span class="copyright-year sundlof-font">2017</span>
+    </footer>
 
 <!-- Javascript -->
 <!--<script src="js/scripts.min.js"></script>-->

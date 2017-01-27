@@ -35,6 +35,12 @@ ul {
     padding: 0
 }
 
+footer {
+	text-align:center;
+	width:100%;
+	position:relative;
+	bottom:0;
+}
 .sundlof-background {
     background-color: $sundlof-background;
 }
@@ -150,9 +156,7 @@ ul {
 
 .gallery {
     margin-top: 42px;
-    section {
-        width: 100%;
-    }
+	
     figure {
         width: 100%;
         margin-bottom: 10px;
@@ -166,9 +170,7 @@ ul {
             display: none;
         }
     }
-    section:last-child {
-        float: right;
-    }
+	
     .headline {
         color: #00687B;
         font-weight: bolder;
@@ -205,7 +207,6 @@ ul {
         width: 100%;
         top: 0px;
         margin-left: 35px;
-        margin-top: 40px;
         display: none;
         text-align: left;
         padding: 0 0;
@@ -257,6 +258,20 @@ ul {
     }
     a:hover {
         background: $sundlof-background;
+    }
+    
+    .hamburger-positioning-anchor {
+        position:relative; 
+        z-index: 10;
+    }
+
+    .hamburger-positioning {
+        position:absolute; 
+        left:5px;
+    }
+
+    .hamburger {
+        padding-right:2px;
     }
 }
 

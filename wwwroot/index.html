@@ -26,12 +26,26 @@
 </head>
 
 <body class="menu-push">
-
+	<style>
+		.menu-mobile .hamburger-positioning-anchor{
+			position:relative; 
+			z-index: 10;
+		}
+		
+		.menu-mobile .hamburger-positioning {
+			position:absolute; 
+			left:5px;
+		}
+		
+		.menu-mobile .hamburger {
+			padding-right:2px;
+		}
+	</style>
     <!-- Mobile version of the Menu -->
     <nav class="menu menu-mobile visible-xs visible-sm">
-        <div style="position:relative; z-index: 10;">
-            <div style="position:absolute; left:5px;" onclick="">
-                <div id="hamburger" class="hamburger hamburger--squeeze" style="padding-right:2px;" type="button">
+        <div class="hamburger-positioning-anchor">
+            <div style="hamburger-positioning">
+                <div id="hamburger" class="hamburger hamburger--squeeze" type="button">
                     <span class="hamburger-box">
 					<span class="hamburger-inner"></span>
                     </span>
@@ -75,9 +89,9 @@
 
     <!-- Desktop version of the Menu -->
     <nav class="menu menu-vertical menu-left hidden-xs hidden-sm" id="menu-s1">
-        <div style="position:relative; z-index: 10;">
-            <div style="position:absolute; right:7px;">
-                <div class="hamburger hamburger--plus" style="padding-right:2px;" type="button">
+        <div class="hamburger-positioning-anchor">
+            <div style="hamburger-positioning">
+                <div class="hamburger hamburger--plus" type="button">
                     <span class="hamburger-box">
 					<span class="hamburger-inner"></span>
                     </span>
@@ -88,13 +102,6 @@
             <div class="icon">S</div>
             <div class="caption"><a href="/">Sundlof</a></div>
         </div>
-
-        <!--	
-		<div class="sundlof-logo-inverse"> 
-			<div class="icon">S</div> 
-			<div class="caption">Sundlof</div> 
-		</div> 
-		-->
 
         <div class="navigation-container">
             <ul>

@@ -1,12 +1,13 @@
 <!doctype html>
-<html class="no-js" lang="">
-<!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<html class="no-js" lang=""><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
     <title>Sundlof Photography</title>
     <meta name="description" content="">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
@@ -27,12 +28,11 @@
 </head>
 
 <body class="menu-push">
-
     <!-- Mobile version of the Menu -->
     <nav class="menu menu-mobile visible-xs visible-sm">
-        <div style="position:relative; z-index: 10;">
-            <div style="position:absolute; left:5px;" onclick="">
-                <div id="hamburger" class="hamburger hamburger--squeeze" style="padding-right:2px;" type="button">
+        <div class="hamburger-positioning-anchor">
+            <div class="hamburger-positioning">
+                <div id="hamburger" class="hamburger hamburger--squeeze" type="button">
                     <span class="hamburger-box">
 					<span class="hamburger-inner"></span>
                     </span>
@@ -75,10 +75,10 @@
     </nav>
 
     <!-- Desktop version of the Menu -->
-    <nav class="menu menu-vertical menu-left hidden-xs hidden-sm" id="menu-s1">
-        <div style="position:relative; z-index: 10;">
-            <div style="position:absolute; right:7px;">
-                <div class="hamburger hamburger--plus" style="padding-right:2px;" type="button">
+    <nav class="menu menu-vertical menu-left hidden-xs hidden-sm">
+        <div class="hamburger-positioning-anchor">
+            <div class="hamburger-positioning">
+                <div class="hamburger hamburger--plus" type="button">
                     <span class="hamburger-box">
 					<span class="hamburger-inner"></span>
                     </span>
@@ -89,13 +89,6 @@
             <div class="icon">S</div>
             <div class="caption"><a href="/">Sundlof</a></div>
         </div>
-
-        <!--	
-		<div class="sundlof-logo-inverse"> 
-			<div class="icon">S</div> 
-			<div class="caption">Sundlof</div> 
-		</div> 
-		-->
 
         <div class="navigation-container">
             <ul>
@@ -132,67 +125,6 @@
         </div>
     </nav>
 
-    <!-- markup used by popup image viewer. Must have class pswp. -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-        <!-- Background of PhotoSwipe. 
-			 It's a separate element as animating opacity is faster than rgba(). -->
-        <div class="pswp__bg"></div>
-
-        <!-- Slides wrapper with overflow:hidden. -->
-        <div class="pswp__scroll-wrap">
-
-            <!-- Container that holds slides. 
-				PhotoSwipe keeps only 3 of them in the DOM to save memory.
-				Don't modify these 3 pswp__item elements, data is added later on. -->
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-            <div class="pswp__ui pswp__ui--hidden">
-
-                <div class="pswp__top-bar">
-
-                    <!--  Controls are self-explanatory. Order can be changed. -->
-
-                    <div class="pswp__counter"></div>
-
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                    <button class="pswp__button pswp__button--share" title="Share"></button>
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                    <!-- element will get class pswp__preloader--active when preloader is running -->
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div>
-
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-				</button>
-
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-				</button>
-
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Photo Gallery -->
     <div class="container">
 
@@ -205,87 +137,91 @@
             <!-- InstanceBeginEditable name="gallery" -->
             <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
                 <section>
+
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="pictures/050616-lasalle-14-1-1.jpg" itemprop="contentUrl" data-size="1013x850">
                             <img src="pictures/050616-lasalle-14-1-1-300x251.jpg" itemprop="thumbnail" alt="Image description" />
                         </a>
-                        <figcaption itemprop="caption description">image caption</figcaption>
                     </figure>
+
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="pictures/1350426-62BPboystown-1-1.jpg" itemprop="contentUrl" data-size="1285x850">
                             <img src="pictures/1350426-62BPboystown-1-1-300x198.jpg" itemprop="thumbnail" alt="Image description" />
                         </a>
-                        <figcaption itemprop="caption description">image caption</figcaption>
                     </figure>
+
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="pictures/1120141execstairway-1.jpg" itemprop="contentUrl" data-size="847x850">
                             <img src="pictures/1120141execstairway-1-298x300.jpg" itemprop="thumbnail" alt="Image description" />
                         </a>
-                        <figcaption itemprop="caption description">image caption</figcaption>
                     </figure>
+
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="pictures/050629-oppenheimer-068-1-1.jpg" itemprop="contentUrl" data-size="667x850">
                             <img src="pictures/050629-oppenheimer-068-1-1-235x300.jpg" itemprop="thumbnail" alt="Image description" />
                         </a>
                         <figcaption itemprop="caption description">G. Allen Andreas-CEO- Archer Daniels Midland Dec 2003 </figcaption>
                     </figure>
+
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="pictures/050622-wunderlich-71-1-1.jpg" itemprop="contentUrl" data-size="635x850">
                             <img src="pictures/050622-wunderlich-71-1-1-224x300.jpg" itemprop="thumbnail" alt="Image description" />
                         </a>
                         <figcaption itemprop="caption description">G. Allen Andreas-CEO- Archer Daniels Midland Dec 2003 </figcaption>
                     </figure>
+
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="pictures/350596-12finkl-1.jpg" itemprop="contentUrl" data-size="1268x850">
                             <img src="pictures/350596-12finkl-1-300x201.jpg" itemprop="thumbnail" alt="Image description" />
                         </a>
-                        <figcaption itemprop="caption description">image caption</figcaption>
                     </figure>
 
                 </section>
             </div>
+            
             <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
                 <section>
+
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="pictures/350599-17finkl-1.jpg" itemprop="contentUrl" data-size="1280x850">
                             <img src="pictures/350599-17finkl-1-300x199.jpg" itemprop="thumbnail" alt="Image description" />
                         </a>
-                        <figcaption itemprop="caption description">image caption</figcaption>
                     </figure>
+
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="pictures/050608-moneytree37mon2bills8bit-1.jpg" itemprop="contentUrl" data-size="569x850">
                             <img src="pictures/050608-moneytree37mon2bills8bit-1-200x300.jpg" itemprop="thumbnail" alt="Image description" />
                         </a>
-                        <figcaption itemprop="caption description">image caption</figcaption>
                     </figure>
+
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="pictures/1350427-50-BPxmasAprGrp.jpg" itemprop="contentUrl" data-size="1241x850">
                             <img src="pictures/1350427-50-BPxmasAprGrp-300x205.jpg" itemprop="thumbnail" alt="Image description" />
                         </a>
-                        <figcaption itemprop="caption description">image caption</figcaption>
                     </figure>
+
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="pictures/040420-CEO-roundtable-050.jpg" itemprop="contentUrl" data-size="1061x850">
                             <img src="pictures/040420-CEO-roundtable-050-300x240.jpg" itemprop="thumbnail" alt="Image description" />
                         </a>
-                        <figcaption itemprop="caption description">image caption</figcaption>
                     </figure>
+
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="pictures/040301dscf0056-1.jpg" itemprop="contentUrl" data-size="1233x850">
                             <img src="pictures/040301dscf0056-1-300x206.jpg" alt="Image description" />
                         </a>
-                        <figcaption itemprop="caption description">image caption</figcaption>
                     </figure>
+
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="pictures/1120179A-1kotler-1-1.jpg" itemprop="contentUrl" data-size="749x850">
                             <img src="pictures/1120179A-1kotler-1-1-264x300.jpg" alt="Image description" />
                         </a>
-                        <figcaption itemprop="caption description">image caption</figcaption>
                     </figure>
 
                 </section>
             </div>
             <div class="clearfix visible-xs visible-sm"></div>
+
             <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
                 <section>
 
@@ -324,41 +260,46 @@
                             <img src="pictures/1120174-5biometsundlof-1-1-276x300.jpg" alt="Image description" />
                         </a>
                     </figure>
-
                 </section>
             </div>
+
             <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                <figcaption itemprop="caption description"></figcaption>
-                </figure>
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="pictures/060831-hydro-klmzoo-217-1.jpg" itemprop="contentUrl" data-size="1273x850"> <img src="pictures/060831-hydro-klmzoo-217-1-300x200.jpg" alt="Image description" /> </a>
-                </figure>
-
-                <figcaption itemprop="caption description"></figcaption>
-                </figure>
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="pictures/1350401-50-1.jpg" itemprop="contentUrl" data-size="755x850"> <img src="pictures/1350401-50-1-266x300.jpg" alt="Image description" /> </a>
-                </figure>
-                <figcaption itemprop="caption description"></figcaption>
-                </figure>
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="pictures/1120084-1rumsfeld-1.jpg" itemprop="contentUrl" data-size="738x850"> <img src="pictures/1120084-1rumsfeld-1-260x300.jpg" alt="Image description" /> </a>
-                </figure>
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="pictures/1120086-1fundmgrs-pubsundlof-1.jpg" itemprop="contentUrl" data-size="976x850"> <img src="pictures/1120086-1fundmgrs-pubsundlof-1-300x261.jpg" alt="Image description" /> </a>
-                </figure>
-                <figcaption itemprop="caption description"></figcaption>
-                </figure>
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="pictures/120148-10-acct-monop-1.jpg" itemprop="contentUrl" data-size="850x821"> <img src="pictures/120148-10-acct-monop-1-300x290.jpg" alt="Image description" /> </a>
-                </figure>
-                <figcaption itemprop="caption description"></figcaption>
-                </figure>
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="pictures/13550446-1BPresearch.jpg" itemprop="contentUrl" data-size="1284x850"> <img src="pictures/13550446-1BPresearch-300x198.jpg" alt="Image description" /> </a>
-                </figure>
-
                 <section>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="pictures/060831-hydro-klmzoo-217-1.jpg" itemprop="contentUrl" data-size="1273x850">
+                        <img src="pictures/060831-hydro-klmzoo-217-1-300x200.jpg" alt="Image description" />
+                    </a>
+                </figure>
+
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="pictures/1350401-50-1.jpg" itemprop="contentUrl" data-size="755x850">
+                        <img src="pictures/1350401-50-1-266x300.jpg" alt="Image description" />
+                    </a>
+                </figure>
+
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="pictures/1120084-1rumsfeld-1.jpg" itemprop="contentUrl" data-size="738x850">
+                        <img src="pictures/1120084-1rumsfeld-1-260x300.jpg" alt="Image description" />
+                    </a>
+                </figure>
+
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="pictures/1120086-1fundmgrs-pubsundlof-1.jpg" itemprop="contentUrl" data-size="976x850">
+                        <img src="pictures/1120086-1fundmgrs-pubsundlof-1-300x261.jpg" alt="Image description" />
+                    </a>
+                </figure>
+
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="pictures/120148-10-acct-monop-1.jpg" itemprop="contentUrl" data-size="850x821">
+                        <img src="pictures/120148-10-acct-monop-1-300x290.jpg" alt="Image description" />
+                    </a>
+                </figure>
+
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="pictures/13550446-1BPresearch.jpg" itemprop="contentUrl" data-size="1284x850">
+                        <img src="pictures/13550446-1BPresearch-300x198.jpg" alt="Image description" />
+                    </a>
+                </figure>
 
                 </section>
             </div>
@@ -366,7 +307,7 @@
         </div>
     </div>
 
-    <footer style="text-align:center;width:100%;position:relative; bottom:0;">
+    <footer>
         &copy; <span class="sundlof-font">sundlof</span> <span class="copyright-year sundlof-font">2017</span>
     </footer>
 
@@ -395,6 +336,4 @@
     <!-- </script> -->
 </body>
 
-<!-- InstanceEnd -->
-
-</html>
+<!-- InstanceEnd --></html>

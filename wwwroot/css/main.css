@@ -2,7 +2,6 @@
 @font-face {
   font-family: Sundlof;
   src: url("../fonts/sundtyp3.woff2") format("woff2"), url("../fonts/sundtype3.woff") format("woff"), url("../fonts/sundtype3.ttf") format("truetype"); }
-
 html {
   background: #000; }
 
@@ -15,6 +14,12 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0; }
+
+footer {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0; }
 
 .sundlof-background {
   background-color: #00687B; }
@@ -46,14 +51,13 @@ ul {
     font-size: 60px;
     color: #00687B; }
   .sundlof-title .secondary {
-	font-family: 'Sorts Mill Goudy', serif;
-	font-size: 23px;
-	letter-spacing: 12px;
-	margin-top: -45px;
-	opacity: 1;
-	font-variant: small-caps;
-	font-weight: bold;
-}
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 23px;
+    letter-spacing: 12px;
+    margin-top: -45px;
+    opacity: 1;
+    font-variant: small-caps;
+    font-weight: bold; }
 
 @media (max-width: 991px) and (min-width: 768px) {
   .sundlof-title {
@@ -64,7 +68,6 @@ ul {
       font-size: 20px;
       letter-spacing: 12px;
       margin-top: -38px; } }
-
 @media (max-width: 767px) {
   .sundlof-title {
     margin-top: 70px; }
@@ -74,7 +77,6 @@ ul {
       font-size: 11px;
       letter-spacing: 4px;
       margin-top: -28px; } }
-
 .sundlof-logo, .sundlof-logo-inverse {
   font-family: Sundlof;
   background-color: #00687B;
@@ -105,7 +107,8 @@ ul {
     margin-right: auto;
     text-align: center; }
     .sundlof-logo .caption a, .sundlof-logo-inverse .caption a,
-    .sundlof-logo .caption a:hover, .sundlof-logo-inverse .caption a:hover {
+    .sundlof-logo .caption a:hover,
+    .sundlof-logo-inverse .caption a:hover {
       text-decoration: none;
       padding: 0; }
 
@@ -119,27 +122,15 @@ ul {
 
 .gallery {
   margin-top: 42px; }
-  .gallery section {
-    width: 100%; }
   .gallery figure {
     width: 100%;
     margin-bottom: 10px; }
     .gallery figure a {
-	width: 100%;
-	text-align: center;
-	color: #00687B;
-	font-size: large;
-	padding-top: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
-	/*padding-left: 20px;*/
-}
+      width: 100%; }
       .gallery figure a img {
         width: 100%; }
     .gallery figure figcaption {
       display: none; }
-  .gallery section:last-child {
-    float: right; }
   .gallery .headline {
     color: #00687B;
     font-weight: bolder;
@@ -171,7 +162,6 @@ ul {
     width: 100%;
     top: 0px;
     margin-left: 35px;
-    margin-top: 40px;
     display: none;
     text-align: left;
     padding: 0 0;
@@ -212,6 +202,14 @@ ul {
     font-weight: 300; }
   .menu a:hover {
     background: #00687B; }
+  .menu .hamburger-positioning-anchor {
+    position: relative;
+    z-index: 10; }
+  .menu .hamburger-positioning {
+    position: absolute;
+    left: 5px; }
+  .menu .hamburger {
+    padding-right: 2px; }
 
 /* Orientation-dependent styles for the content of the menu */
 .menu-vertical {
@@ -385,4 +383,4 @@ nav.menu ul li ul.sub-menu li ul.sub-menu li.current-menu-item a {
 nav.menu ul li a {
   transition: opacity 300ms;
   -webkit-transition: opacity 300ms;
-  -moz-transition: opacity 300ms;
+  -moz-transition: opacity 300ms; }
