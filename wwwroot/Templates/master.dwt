@@ -29,6 +29,7 @@
 
 <body class="menu-push">
     <!-- Mobile version of the Menu -->
+    
     <nav class="menu menu-mobile visible-xs visible-sm">
         <div class="hamburger-positioning-anchor">
             <div class="hamburger-positioning">
@@ -127,9 +128,7 @@
 
     <!-- Photo Gallery -->
     <div class="container">
-
 		<!-- TemplateBeginEditable name="Sundlof Title" -->
-        <!-- sundlof page title -->
         <div class="sundlof-title">
             <div class="primary">Sundlof</div>
             <div class="secondary">John Sundlof Photography</div>
@@ -137,68 +136,7 @@
 		<!-- TemplateEndEditable -->
 		
 		<!-- TemplateBeginEditable name="Main Content" -->
-        <div class="row gallery" itemscope itemtype="http://schema.org/ImageGallery">
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
-                        <img src="../pictures/040806-lou-14-286x191.jpg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                    <figcaption itemprop="caption description">image caption</figcaption>
-                </figure>
-
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
-                        <img src="../pictures/040806-lou-14-286x191.jpg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                    <figcaption itemprop="caption description">image caption</figcaption>
-                </figure>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
-                        <img src="../pictures/040806-lou-14-286x191.jpg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                    <figcaption itemprop="caption description">image caption</figcaption>
-                </figure>
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
-                        <img src="../pictures/040806-lou-14-286x191.jpg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                    <figcaption itemprop="caption description">image caption</figcaption>
-                </figure>
-            </div>
-            <div class="clearfix visible-xs visible-sm"></div>
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
-                        <img src="../pictures/040806-lou-14-286x191.jpg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                    <figcaption itemprop="caption description">image caption</figcaption>
-                </figure>
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
-                        <img src="../pictures/040806-lou-14-286x191.jpg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                    <figcaption itemprop="caption description">image caption</figcaption>
-                </figure>
-            </div>
-            <div class="clearfix visible-md"></div>
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
-                        <img src="../pictures/040806-lou-14-286x191.jpg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                    <figcaption itemprop="caption description">image caption</figcaption>
-                </figure>
-
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
-                        <img src="../pictures/040806-lou-14-286x191.jpg" itemprop="thumbnail" alt="Image description" />
-                    </a>
-                    <figcaption itemprop="caption description">image caption</figcaption>
-                </figure>
-            </div>
-        </div>
+		<!-- Main Content-->
 		<!-- TemplateEndEditable -->
     </div>
 

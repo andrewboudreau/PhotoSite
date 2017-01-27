@@ -137,22 +137,73 @@
 		<!-- InstanceEndEditable -->
 		
 		<!-- InstanceBeginEditable name="Main Content" -->
-  		
    		<div class="row gallery" itemscope itemtype="http://schema.org/ImageGallery">
-	   		<div class="col-xs-12">
-			<div class="headline">
-			<!-- TemplateBeginEditable name="Headline" -->
-			Hero Text
-			<!-- TemplateEndEditable --></div>
-			<!-- TemplateBeginEditable name="Body" -->
+	   		<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<!-- TemplateBeginEditable name="Column One" -->
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
+                        <img src="../pictures/040806-lou-14-286x191.jpg" itemprop="thumbnail" alt="Image description" />
+                    </a>
+                    <figcaption itemprop="caption description">image caption</figcaption>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
+                        <img src="../pictures/040806-lou-14-286x191.jpg" itemprop="thumbnail" alt="Image description" />
+                    </a>
+                    <figcaption itemprop="caption description">image caption</figcaption>
+                </figure>
+			<!-- TemplateEndEditable -->
+            </div>
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<!-- TemplateBeginEditable name="Column Two" -->
 				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          			<a href="../pictures/080919-foh-46-1.jpg" itemprop="contentUrl" data-size="1063x850">
-          				<img src="../pictures/080919-foh-46-1.jpg" itemprop="thumbnail" alt="Image description" width="20px" />
+					<a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
+						<img src="../pictures/040806-lou-14-286x191.jpg" itemprop="thumbnail" alt="Image description" />
 					</a>
-		        	<figcaption itemprop="caption description">Flashes of Hope Family</figcaption>
-	          </figure>
-      		<!-- TemplateEndEditable -->		
-       		</div>
+					<figcaption itemprop="caption description">image caption</figcaption>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
+						<img src="../pictures/040806-lou-14-286x191.jpg" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption itemprop="caption description">image caption</figcaption>
+				</figure>
+			<!-- TemplateEndEditable -->
+            </div>
+            <div class="clearfix visible-xs visible-sm"></div>
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<!-- TemplateBeginEditable name="Column Three" -->
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
+                        <img src="../pictures/040806-lou-14-286x191.jpg" itemprop="thumbnail" alt="Image description" />
+                    </a>
+                    <figcaption itemprop="caption description">image caption</figcaption>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
+                        <img src="../pictures/040806-lou-14-286x191.jpg" itemprop="thumbnail" alt="Image description" />
+                    </a>
+                    <figcaption itemprop="caption description">image caption</figcaption>
+                </figure>
+			<!-- TemplateEndEditable -->
+            </div>
+            <div class="clearfix visible-md"></div>
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<!-- TemplateBeginEditable name="Column Four" -->
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
+                        <img src="../pictures/040806-lou-14-286x191.jpg" itemprop="thumbnail" alt="Image description" />
+                    </a>
+                    <figcaption itemprop="caption description">image caption</figcaption>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
+                        <img src="../pictures/040806-lou-14-286x191.jpg" itemprop="thumbnail" alt="Image description" />
+                    </a>
+                    <figcaption itemprop="caption description">image caption</figcaption>
+                </figure>
+			<!-- TemplateEndEditable -->
+            </div>
         </div>
 		<!-- InstanceEndEditable -->
     </div>
