@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang=""><!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
 
 <head>
     <meta charset="utf-8">
@@ -134,7 +134,7 @@
             <div class="secondary">John Sundlof Photography</div>
         </div>
         <div class="row gallery" itemscope itemtype="http://schema.org/ImageGallery">
-            <!-- TemplateBeginEditable name="gallery" -->
+		    <!-- InstanceBeginEditable name="Main Content" -->
             <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                     <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
@@ -195,7 +195,7 @@
                     <figcaption itemprop="caption description">image caption</figcaption>
                 </figure>
             </div>
-            <!-- TemplateEndEditable -->
+		    <!-- InstanceEndEditable -->
         </div>
     </div>
 
@@ -227,5 +227,5 @@
     <!-- ga('create','UA-XXXXX-X','auto');ga('send','pageview'); -->
     <!-- </script> -->
 </body>
-
+<!-- InstanceEnd -->
 </html>
