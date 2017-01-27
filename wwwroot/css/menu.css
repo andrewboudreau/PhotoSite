@@ -48,14 +48,13 @@
     .menu .hamburger-positioner {
       position: absolute;
       right: -6px; }
-
   .menu.menu-open {
     left: 0px; }
     .menu.menu-open .hamburger {
       display: none; }
-
   .menu.breath {
     left: -180px; } }
+
 /* Small XSmall Menu Styles */
 @media (max-width: 991px) {
   .menu {
@@ -87,15 +86,14 @@
       display: none; }
     .menu nav.menu ul.sub-menu li ul.sub-menu {
       display: auto; }
-
   .menu.menu-open {
     height: 420px; }
     .menu.menu-open .navigation-container {
       display: block; }
-
   .hamburger-positioner {
     position: absolute;
     left: 8px; } }
+
 /* Push classes applied to the body */
 .menu-push {
   overflow-x: hidden;
