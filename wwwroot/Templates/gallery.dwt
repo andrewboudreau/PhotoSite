@@ -29,6 +29,7 @@
 
 <body class="menu-push">
     <!-- Mobile version of the Menu -->
+    
     <nav class="menu menu-mobile visible-xs visible-sm">
         <div class="hamburger-positioning-anchor">
             <div class="hamburger-positioning">
@@ -41,35 +42,36 @@
         </div>
         <div class="navigation-container">
             <ul>
+               <li><a href="index.html" style="font-variant: small-caps">John Sundlof Photography</a></li>
                 <li class="has-menu">
-                    <a href="../humanity.html">Humanity</a>
+                    <a href="humanity.html">Humanity</a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="../street---documentary.html">Street &#038; Documentary</a>
+                            <a href="street---documentary.html">Street &#038; Documentary</a>
                         </li>
                         <li>
-                            <a href="../studio-portraits---ideas.html">Studio Portraits &#038; Ideas</a>
+                            <a href="studio-portraits---ideas.html">Studio Portraits &#038; Ideas</a>
                         </li>
                         <li class="has-menu">
-                            <a href="../international.html">International</a>
+                            <a href="international.html">International</a>
                             <ul class="sub-menu">
-                                <li><a href="../india.html">India</a></li>
+                                <li><a href="india.html">India</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li><a href="../business---industry.html">Business &#038; Industry</a></li>
-                <li><a href="../health---society.html">Health &#038; Society</a></li>
+                <li><a href="business---industry.html">Business &#038; Industry</a></li>
+                <li><a href="health---society.html">Health &#038; Society</a></li>
                 <li class="has-menu">
-                    <a href="../projects.html">Projects</a>
+                    <a href="projects.html">Projects</a>
                     <ul class="sub-menu">
-                        <li><a href="../foh.html">Flashes of Hope</a></li>
-                        <li><a href="../ontheline---outtodry.html">On the Line &#8211; Out to Dry</a></li>
+                        <li><a href="foh.html">Flashes of Hope</a></li>
+                        <li><a href="ontheline---outtodry.html">On the Line &#8211; Out to Dry</a></li>
                         <li><a target="_blank" href="http://www.sundlof.com/bookACP.pdf">BackPorch &#8211; 1991- present</a></li>
                         <li><a target="_blank" href="http://sundlof.com/happyny.pdf">Happy New Years</a></li>
                     </ul>
                 </li>
-                <li><a href="../contact.html">Contact-Studio Info</a></li>
+                <li><a href="contact.html">Contact-Studio Info</a></li>
             </ul>
         </div>
     </nav>
@@ -93,41 +95,40 @@
         <div class="navigation-container">
             <ul>
                 <li>
-                    <a href="../humanity.html">Humanity</a>
+                    <a href="humanity.html">Humanity</a>
                     <ul class="sub-menu">
                         <li>
-                            <a href="../street---documentary.html">Street &#038; Documentary</a>
+                            <a href="street---documentary.html">Street &#038; Documentary</a>
                         </li>
                         <li>
-                            <a href="../studio-portraits---ideas.html">Studio Portraits &#038; Ideas</a>
+                            <a href="studio-portraits---ideas.html">Studio Portraits &#038; Ideas</a>
                         </li>
                         <li>
-                            <a href="../international.html">International</a>
+                            <a href="international.html">International</a>
                             <ul class="sub-menu">
-                                <li><a href="../india.html">India</a></li>
+                                <li><a href="india.html">India</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li><a href="../business---industry.html">Business &#038; Industry</a></li>
-                <li><a href="../health---society.html">Health &#038; Society</a></li>
+                <li><a href="business---industry.html">Business &#038; Industry</a></li>
+                <li><a href="health---society.html">Health &#038; Society</a></li>
                 <li>
-                    <a href="../projects.html">Projects</a>
+                    <a href="projects.html">Projects</a>
                     <ul class="sub-menu">
-                        <li><a href="../foh.html">Flashes of Hope</a></li>
-                        <li><a href="../ontheline---outtodry.html">On the Line &#8211; Out to Dry</a></li>
+                        <li><a href="foh.html">Flashes of Hope</a></li>
+                        <li><a href="ontheline---outtodry.html">On the Line &#8211; Out to Dry</a></li>
                         <li><a target="_blank" href="http://www.sundlof.com/bookACP.pdf">BackPorch &#8211; 1991- present</a></li>
                         <li><a target="_blank" href="http://sundlof.com/happyny.pdf">Happy New Years</a></li>
                     </ul>
                 </li>
-                <li><a href="../contact.html">Contact-Studio Info</a></li>
+                <li><a href="contact.html">Contact-Studio Info</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Photo Gallery -->
     <div class="container">
-
 		<!-- InstanceBeginEditable name="Sundlof Title" -->
         <!-- sundlof page title -->
         <div class="sundlof-title">
@@ -138,7 +139,7 @@
 		
 		<!-- InstanceBeginEditable name="Main Content" -->
    		<div class="row gallery" itemscope itemtype="http://schema.org/ImageGallery">
-	   		<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+	   		<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 			<!-- TemplateBeginEditable name="Column One" -->
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                     <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
@@ -154,7 +155,7 @@
                 </figure>
 			<!-- TemplateEndEditable -->
             </div>
-			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+			<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 			<!-- TemplateBeginEditable name="Column Two" -->
 				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 					<a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
@@ -171,7 +172,7 @@
 			<!-- TemplateEndEditable -->
             </div>
             <div class="clearfix visible-xs visible-sm"></div>
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 			<!-- TemplateBeginEditable name="Column Three" -->
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                     <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
@@ -187,8 +188,7 @@
                 </figure>
 			<!-- TemplateEndEditable -->
             </div>
-            <div class="clearfix visible-md"></div>
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 			<!-- TemplateBeginEditable name="Column Four" -->
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                     <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">

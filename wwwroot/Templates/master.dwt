@@ -42,6 +42,7 @@
         </div>
         <div class="navigation-container">
             <ul>
+               <li><a href="index.html" style="font-variant: small-caps">John Sundlof Photography</a></li>
                 <li class="has-menu">
                     <a href="humanity.html">Humanity</a>
                     <ul class="sub-menu">
@@ -66,8 +67,8 @@
                     <ul class="sub-menu">
                         <li><a href="foh.html">Flashes of Hope</a></li>
                         <li><a href="ontheline---outtodry.html">On the Line &#8211; Out to Dry</a></li>
-                        <li><a target="_blank" href="http://www.sundlof.com/bookACP.pdf">BackPorch &#8211; 1991- present</a></li>
-                        <li><a target="_blank" href="http://sundlof.com/happyny.pdf">Happy New Years</a></li>
+                        <li><a target="_blank" href="back-porch.html">BackPorch &#8211; 1991- present</a></li>
+                        <li><a target="_blank" href="http://sundlof.com/happy-new-years.html">Happy New Years</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact-Studio Info</a></li>
@@ -117,8 +118,8 @@
                     <ul class="sub-menu">
                         <li><a href="foh.html">Flashes of Hope</a></li>
                         <li><a href="ontheline---outtodry.html">On the Line &#8211; Out to Dry</a></li>
-                        <li><a target="_blank" href="http://www.sundlof.com/bookACP.pdf">BackPorch &#8211; 1991- present</a></li>
-                        <li><a target="_blank" href="http://sundlof.com/happyny.pdf">Happy New Years</a></li>
+                        <li><a target="_blank" href="back-porch.html">BackPorch &#8211; 1991- present</a></li>
+                        <li><a target="_blank" href="http://sundlof.com/happy-new-years.html">Happy New Years</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact-Studio Info</a></li>

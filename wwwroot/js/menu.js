@@ -65,7 +65,7 @@ $(".menu").click(function(e) {
         return;
     }
 
-    $('body').toggleClass('menu-push-tobottom');
+    //$('body').toggleClass('menu-push-tobottom');
     $(".menu").toggleClass("menu-open");
     $('.menu li.has-menu').addClass('opened').find('ul.sub-menu').show();
 

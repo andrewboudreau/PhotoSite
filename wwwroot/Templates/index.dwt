@@ -29,6 +29,7 @@
 
 <body class="menu-push">
     <!-- Mobile version of the Menu -->
+    
     <nav class="menu menu-mobile visible-xs visible-sm">
         <div class="hamburger-positioning-anchor">
             <div class="hamburger-positioning">
@@ -41,6 +42,7 @@
         </div>
         <div class="navigation-container">
             <ul>
+               <li><a href="index.html" style="font-variant: small-caps">John Sundlof Photography</a></li>
                 <li class="has-menu">
                     <a href="humanity.html">Humanity</a>
                     <ul class="sub-menu">
@@ -127,14 +129,14 @@
 
     <!-- Photo Gallery -->
     <div class="container">
-
-        <!-- sundlof page title -->
+		<!-- InstanceBeginEditable name="Sundlof Title" -->
         <div class="sundlof-title">
             <div class="primary">Sundlof</div>
             <div class="secondary">John Sundlof Photography</div>
         </div>
-        <div class="row gallery" itemscope itemtype="http://schema.org/ImageGallery">
-		    <!-- InstanceBeginEditable name="Main Content" -->
+		<!-- InstanceEndEditable -->
+		
+		<!-- InstanceBeginEditable name="Main Content" -->
             <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                     <a href="../pictures/040806-lou-14.jpg" itemprop="contentUrl" data-size="953x638">
@@ -196,7 +198,6 @@
                 </figure>
             </div>
 		    <!-- InstanceEndEditable -->
-        </div>
     </div>
 
     <footer>
@@ -227,5 +228,5 @@
     <!-- ga('create','UA-XXXXX-X','auto');ga('send','pageview'); -->
     <!-- </script> -->
 </body>
-<!-- InstanceEnd -->
-</html>
+
+<!-- InstanceEnd --></html>
